@@ -68,40 +68,67 @@ $typekit = null;
 
 	<div id="wrapper">
 		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
+			<jdoc:include type="modules" name="header" style="rounded" />
 		</header>
+
+		<div id="masthead">
+			<jdoc:include type="modules" name="masthead" style="rounded" />
+		</div>
+
+		<div id="prebody">
+			<jdoc:include type="modules" name="prebody" style="rounded" />
+		</div>
 
 		<div id="main">
 			<div id="content">
 				<?php if ($this->countModules('precontent')): ?>
-					<jdoc:include type="modules" name="precontent" style="xhtml" />
+					<jdoc:include type="modules" name="precontent" style="rounded" />
 				<?php endif; ?>
+
+				<jdoc:include type="message" />
 
 				<article>
 					<jdoc:include type="component" />
 				</article>
 
 				<?php if ($this->countModules('postcontent')): ?>
-					<jdoc:include type="modules" name="postcontent" style="xhtml" />
+					<jdoc:include type="modules" name="postcontent" style="rounded" />
 				<?php endif; ?>
 			</div>
 
 			<?php if ($this->countModules('sidebar1')): ?>
 				<aside>
-					<jdoc:include type="modules" name="sidebar1" style="xhtml" />
+					<jdoc:include type="modules" name="sidebar1" style="rounded" />
 				</aside>
 			<?php endif; ?>
 
 			<?php if ($this->countModules('sidebar2')): ?>
 				<aside>
-					<jdoc:include type="modules" name="sidebar2" style="xhtml" />
+					<jdoc:include type="modules" name="sidebar2" style="rounded" />
 				</aside>
 			<?php endif; ?>
+		</div>
+
+		<div id="postbody">
+			<jdoc:include type="modules" name="postbody" style="rounded" />
 		</div>
 
 		<footer>
 			<jdoc:include type="modules" name="footer" style="xhtml" />
 		</footer>
+
+		<div id="copyright">
+			<div class="span4">
+				<p>Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></p>
+			</div>
+			<div class="span4 offset4">
+				<p>Copyright &copy; <?php echo date('Y') ?></p>
+			</div>
+		</div>
+
+		<div id="debug">
+			<jdoc:include type="debug" />
+		</div>
 	</div>
 
 	<div class="hidden">
