@@ -1,7 +1,21 @@
 /**
- * @depends columns.js
- * @depends dropmenu.js
- * @depends lettering.js
- * @depends html5.js
- * @depends script-init.js
+ * @codekit-prepend "columns.js"
+ * @codekit-prepend "dropmenu.js"
+ * @codekit-prepend "lettering.js"
+ * @codekit-prepend "html5.js"
+ * @codekit-prepend "rollover.js"
  */
+
+window.addEvent('domready', function() {
+	// image roll overs
+	new CCI.Rollover('img.rollover');
+	// new CCI.Rollover('li.item-122 img, li.item-105 img', { normal_text: '.', over_text: '_rollover.'});
+
+	// image lettering
+	// $$('h1, h2, h3, h4, h5, h6').lettering('words');
+});
+
+window.addEvent('load', function () {
+	// columns
+	// new CCI.Columns($('bottom'), '.module > div > div');
+});
