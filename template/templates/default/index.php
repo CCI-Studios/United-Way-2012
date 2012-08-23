@@ -151,7 +151,7 @@ $typekit = null;
 					s.parentNode.insertBefore(g,s)}(document,"script"));
 		  	</script>
 		<?php endif; ?>
-		<script src="/templates/<?= $this->template ?>/js/scripts.min.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/scripts-ck.js"></script>
 	<?php endif; ?>
 </body>
 </html>
