@@ -1,0 +1,19 @@
+.module.search-bar-desktop {
+	
+	input {
+		width: 300px;
+	}
+}
+
+#bottom .module {
+	width: 48.936170213%;
+	float: left;
+	
+	&.first {
+		width: 100%;
+	}
+	
+	&.third {
+		margin-left: 2.127659574%; //20px
+	}
+}

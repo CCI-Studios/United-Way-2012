@@ -1,35 +1,31 @@
 // @group modules
-.module {} // DO NOT TOUCH
-.module h3 {} // DO TOUCH
+
+
+#sidebar,
+#bottom {
+	
+	.module h3 {
+		font-size: 15px;
+		padding-left: 35px;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 23px;
+	}
+	
+	.module .custom {
+		padding-top: 20px;
+		background: url('../images/divider_dotted.png') top center repeat-x;
+
+		*:first-child {
+			margin-top: 0;
+		}
+	}
+}
 
 .module.logo {
 	width: 100%;
 	text-align: center;
 	padding-top: 23px;
-}
-
-.module.search-bar-desktop {
-	float: right;
-	margin-top: 30px;
-	position: relative;
-	
-	input {
-		height: 37px;
-		border: 2px solid #efefef;
-		border-radius: 14px;
-	}
-	
-	button {
-		position: absolute;
-		top: 5px;
-		right: 10px;
-		width: 26px;
-		height:25px;
-		background: url('../images/icon_search.png') center center no-repeat;
-		
-		border: none;
-		text-indent: -9999px;
-	}
 }
 
 .module.search-bar-mobile {
@@ -40,5 +36,37 @@
 	input {
 		border: 1px solid #efefef;
 		border-radius: 7px;
+	}
+}
+
+.module.goals {
+	
+	h3 {
+		color: $red;
+		background: url('../images/icon_goals.png');
+	}
+}
+
+.module.downloads {
+	
+	h3 {
+		color: $red;
+		background: url('../images/icon_downloads.png');
+	}
+}
+
+.module.news {
+	
+	h3 {
+		color: $blue;
+		background: url('../images/icon_news.png');
+	}
+}
+
+.module.events {
+	
+	h3 {
+		color: $yellow;
+		background: url('../images/icon_events.png');
 	}
 }
