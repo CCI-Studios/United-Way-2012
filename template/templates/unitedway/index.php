@@ -97,31 +97,33 @@ $typekit = 'ubu2hmw';
 						<jdoc:include type="modules" name="postcontent" style="rounded" />
 					<?php endif; ?>
 				</div>
+				
+				<?php if ($this->countModules('postbody')): ?>
+				<div id="postbody">
+					<jdoc:include type="modules" name="postbody" style="rounded" />
+				</div>
+				<?php endif; ?>
 
 				<?php if ($this->countModules('sidebar')): ?>
 					<div id="sidebar">
 						<jdoc:include type="modules" name="sidebar" style="rounded" />
 					</div>
 				<?php endif; ?>
+				
+				<div class="clear"></div>
 
+				<div id="bottom">
+					<jdoc:include type="modules" name="bottom" style="rounded" />
+				</div>
 			</div>	<!-- end of main -->
-
-			<div id="postbody">
-				<jdoc:include type="modules" name="postbody" style="rounded" />
-			</div>
-		
-			<div id="bottom">
-				<jdoc:include type="modules" name="bottom" style="rounded" />
-			</div>
+			<div class="clear"></div>
 		</div> <!-- end of container -->
 
 		<div id="footer"><div class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-			<div id="copyright">
-				<div>
-					<p>	Copyright &copy; <?php echo date('Y') ?><br/>
+			<div class="left">
+				<div>&copy; <?php echo date('Y') ?> United Way Sarnia-Lambton. All Rights Reserved.<br/>
 							Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
-					</p>
 				</div>
 			</div>
 		</div></div>
@@ -139,6 +141,7 @@ $typekit = 'ubu2hmw';
 
 	<!-- load scripts -->
 	<?php if ($testing): ?>
+		<script src="/templates/<?= $this->template ?>/js/numbering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
