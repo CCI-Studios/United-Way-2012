@@ -12,11 +12,6 @@ div.container
 
 */
 
-.container {
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
 @mixin grid($columns, $width, $gutter) {
 	.row-#{$columns} {
 		margin-left: -#{$gutter}px;
