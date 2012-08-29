@@ -5,6 +5,28 @@
 }
 
 #header {
-	padding-top: 4px;
+	padding: 4px 0 20px;
 	background: url('../images/bg_headerRepeat-mobile.png') top center repeat-x;
+}
+
+#masthead {
+	padding: 0 0 20px;
+}
+
+#main {
+	padding: 20px 0;
+	background: url('../images/divider_dotted.png') top center repeat-x;
+}
+
+#footer {
+	padding: 20px 0;
+	background: url('../images/bg_footerRepeat.png') top center repeat-x;
+	min-height: 174px;
+	
+	font-size: 12px;
+	color: #ffffff;
+	
+	a {
+		color: #ffffff;
+	}
 }
