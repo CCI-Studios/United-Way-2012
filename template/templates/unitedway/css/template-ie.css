@@ -366,9 +366,11 @@ table {
 
 /* elements */
 body, select, input, textarea {
-  color: #444;
-  /* off black */
-  font-family: Helvetica, Arial, sans-serif; }
+  color: #4e4e4e;
+  font-family: "myriad-pro", Helvetica, Arial, sans-serif; }
+
+body {
+  font-size: .875em; }
 
 * {
   -moz-box-sizing: border-box;
@@ -459,13 +461,6 @@ div.container
 		div.span-10
 
 */
-.container {
-  margin: 0 auto;
-  padding: 0 10px; }
-
-.container {
-  width: 960px; }
-
 .row-12 {
   margin-left: -20px; }
   .row-12:before, .row-12:after {
@@ -609,6 +604,46 @@ div.container
   .row-24 .span-24 {
     width: 940px; }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%; }
+
+#header {
+  padding-top: 4px;
+  background: url("../images/bg_headerRepeat-mobile.png") top center repeat-x; }
+
+.module.logo {
+  width: 100%;
+  text-align: center;
+  padding-top: 23px; }
+
+.module.search-bar-desktop {
+  float: right;
+  margin-top: 30px;
+  position: relative; }
+  .module.search-bar-desktop input {
+    height: 37px;
+    border: 2px solid #efefef;
+    border-radius: 14px; }
+  .module.search-bar-desktop button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 26px;
+    height: 25px;
+    background: url("../images/icon_search.png") center center no-repeat;
+    border: none;
+    text-indent: -9999px; }
+
+.module.search-bar-mobile {
+  position: relative;
+  float: right;
+  height: 26px; }
+  .module.search-bar-mobile input {
+    border: 1px solid #efefef;
+    border-radius: 7px; }
+
 .hmenu .menu {
   margin: 0;
   padding: 0; }
@@ -629,6 +664,39 @@ div.container
   padding: 0; }
   .hmenu ul ul li {
     white-space: nowrap; }
+
+.primary {
+  padding-top: 24px;
+  font-weight: 600; }
+  .primary li:first-child {
+    padding-left: 0; }
+  .primary a {
+    color: #5f6062; }
+    .primary a:hover {
+      color: black;
+      text-decoration: none; }
+
+.top {
+  float: right;
+  background: url("../images/bg_headerSwoosh.png") top right no-repeat;
+  clear: right;
+  width: 55%;
+  font-size: .85714285714em;
+  text-align: right; }
+  .top .menu {
+    line-height: 34px; }
+    .top .menu li {
+      padding: 0;
+      margin-left: 6px;
+      border-left: 1px solid #ffffff;
+      line-height: 1em; }
+      .top .menu li:first-child {
+        border-left: 0; }
+  .top a {
+    margin-left: 6px;
+    color: white; }
+    .top a:hover {
+      color: white; }
 
 .vmenu .menu {
   margin: 0;
@@ -654,12 +722,12 @@ div.container
    Also: hot pink! */
 /* TODO Update selection BG color */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #ee2e24;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #FF5E99;
+  background: #ee2e24;
   color: #fff;
   text-shadow: none; }
 
@@ -670,6 +738,17 @@ div.container
 .tablet-visible, .desktop-visible,
 .phone-hidden, .mobile-hidden {
   display: none; }
+
+#header {
+  padding-top: 30px;
+  background: url("../images/bg_headerRepeat-desktop.png") top center no-repeat; }
+
+.module.logo {
+  width: auto;
+  float: left;
+  margin-top: -11px;
+  text-align: none;
+  padding-top: 0; }
 
 .tablet-visible, .mobile-visible,
 .phone-hidden, .desktop-hidden {
@@ -686,6 +765,10 @@ div.container
 .phone-visible, .tablet-hidden
 .mobile-hidden, .desktop-hidden {
   display: none; }
+
+.container {
+  width: 960px;
+  padding: 0 10px; }
 
 .desktop-visible, .phone-hidden,
 .tablet-hidden, .mobile-hidden {
