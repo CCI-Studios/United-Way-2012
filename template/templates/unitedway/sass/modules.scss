@@ -47,28 +47,45 @@
 	}
 }
 
-.module.downloads {
+.module.red {
 	
 	h3 {
 		color: $red;
-		background: url('../images/icon_downloads.png');
+	}
+	
+	ul {
+		li {
+			background: url('../images/bullet_red.png');
+		}
 	}
 }
 
-.module.news {
+.module.blue {
 	
 	h3 {
 		color: $blue;
-		background: url('../images/icon_news.png');
+	}
+	
+	ul {
+		li {
+			background: url('../images/bullet_blue.png');
+		}
 	}
 }
 
-.module.events {
+.module.yellow {
 	
 	h3 {
 		color: $yellow;
-		background: url('../images/icon_events.png');
 	}
+	
+	ul {
+		li {
+			background: url('../images/bullet_yellow.png');
+		}
+	}
+}
+
 //headers with icon
 .module.goals h3 {
 	background: url('../images/icon_goals.png');
