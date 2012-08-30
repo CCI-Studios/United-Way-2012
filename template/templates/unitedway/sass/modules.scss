@@ -1,27 +1,5 @@
 // @group modules
 
-
-#sidebar,
-#bottom {
-	
-	.module h3 {
-		font-size: 15px;
-		padding-left: 35px;
-		background-repeat: no-repeat;
-		background-position: left center;
-		background-size: 23px;
-	}
-	
-	.module .custom {
-		padding-top: 20px;
-		background: url('../images/divider_dotted.png') top center repeat-x;
-
-		*:first-child {
-			margin-top: 0;
-		}
-	}
-}
-
 .module.logo {
 	width: 100%;
 	text-align: center;
@@ -40,11 +18,41 @@
 	}
 }
 
-.module.goals {
+//colored modules
+
+#sidebar,
+#bottom {
 	
-	h3 {
-		color: $red;
-		background: url('../images/icon_goals.png');
+	.module {
+		
+		h3 {
+			font-size: 15px;
+			padding-left: 35px;
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: 23px;
+		}
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			
+			li {
+				padding-left: 10px;
+				background-repeat: no-repeat;
+				background-position: left 5px;
+			}
+		}
+		
+	}
+	
+	.module .custom {
+		padding-top: 20px;
+		background: url('../images/divider_dotted.png') top center repeat-x;
+
+		*:first-child {
+			margin-top: 0;
+		}
 	}
 }
 
