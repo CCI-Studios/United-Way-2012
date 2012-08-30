@@ -18,8 +18,22 @@ CCI.Columns = new Class({
 		this.selector = selector;
 		this.columns = this.container.getElements(this.selector);
 		
-		this.offset = 20;
+		this._calculate();
+		
+		window.addEvent('resize', function() {
+			this._calculate();
+		}.bind(this));
+	},
+	
+	_calculate: function() {
+		this.offset = 0;
 		this.height = 0;
+		
+		this.columns.setStyle('height', null);
+		
+		if (window.getSize().x < 480) {
+			return;
+		}
 		
 		var i, _len, height;
 		height = 0;
