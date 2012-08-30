@@ -120,28 +120,25 @@ $typekit = 'ubu2hmw';
 					<div id="sidebar">
 						<jdoc:include type="modules" name="sidebar" style="rounded" />
 					</div>
+					<div class="clear"></div>
 				<?php endif; ?>
-				
-				<div class="clear"></div>
 
 				<div id="bottom">
 					<jdoc:include type="modules" name="bottom" style="rounded" />
 				</div>
+				<div class="clear"></div>
 			</div>	<!-- end of main -->
-			<div class="clear"></div>
 		</div> <!-- end of container -->
 
 		<div id="footer"><div class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-			<div class="left">
+			<div id="copyright">
 				<div>&copy; <?php echo date('Y') ?> United Way Sarnia-Lambton. All Rights Reserved.<br/>
 							Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
 				</div>
 			</div>
 		</div></div>
-
-
-
+		
 		<div id="debug">
 			<jdoc:include type="modules" name="debug" />
 		</div>
