@@ -95,10 +95,24 @@
 	.menu {
 		margin: 0;
 		padding: 0;
+		list-style: none;
 	}
 
 	ul ul { // submenus
 		margin: 0.5em 0 1em 1em;
 		list-style: none;
 	}
+	
+	&.mobile {
+		font-size: 22px;
+		
+		li {
+			line-height: 38px;
+		}
+		
+		a {
+			color: #ffffff;
+		}
+	}
+	
 }
