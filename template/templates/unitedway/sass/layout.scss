@@ -8,6 +8,15 @@ body.menu-open #wrapper {
 	padding: 0 5%;
 }
 
+#wrapper {
+	background-color: #ffffff;
+	position: relative;
+	z-index: 5;
+	box-shadow: 0 0 30px #333;
+	
+	@include transition(left .3s ease-in-out);	
+}
+
 #header {
 	padding: 4px 0 20px;
 	background: url('../images/bg_headerRepeat-mobile.png') top center repeat-x;
