@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: .83em 0;
 }
 
+.item-page h1 {
+	font-size: 15px;
+	color: $red;
+	background: url('../images/divider_dotted.png') bottom center repeat-x;
+}
+
 h1 { font-size: 2em; }
 h2 { font-size: 1.8em; }
 h3 { font-size: 1.6em; }
