@@ -6,14 +6,14 @@
 }
 
 #bottom .module {
-	width: 48.936170213%;
-	float: left;
-	
+	width: 34.042553191%%;
+	padding-left: 2.127659574%; //20px
 	&.first {
-		width: 100%;
+		width: 31.914893617%;
+		padding-left: 0;
 	}
 	
 	&.third {
-		margin-left: 2.127659574%; //20px
+		margin-left: 0;
 	}
 }
