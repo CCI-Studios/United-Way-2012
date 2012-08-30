@@ -78,9 +78,11 @@ $typekit = 'ubu2hmw';
 		</div></div>
 		
 		<div class="container">
+			<?php if ($this->countModules('masthead')): ?>
 			<div id="masthead">
 				<jdoc:include type="modules" name="masthead" style="rounded" />
 			</div>
+			<?php endif; ?>
 
 			<div id="prebody">
 				<jdoc:include type="modules" name="prebody" style="rounded" />
