@@ -153,12 +153,14 @@ $typekit = 'ubu2hmw';
 
 	<!-- load scripts -->
 	<?php if ($testing): ?>
+		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/numbering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/scripts.js"></script>
 	<?php else: ?>
 		<?php if ($analytics): ?>
 			<script>
