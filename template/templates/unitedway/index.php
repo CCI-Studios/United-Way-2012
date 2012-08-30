@@ -89,7 +89,13 @@ $typekit = 'ubu2hmw';
 			</div>
 
 			<div id="main">
-				<div id="content">
+				<div id="content" class="<?php 
+							if (!$this->countModules('sidebar')) {
+								echo 'wide1';
+							} else {
+								echo 'wide2';
+							}
+					?>">
 					<?php if ($this->countModules('precontent')): ?>
 						<jdoc:include type="modules" name="precontent" style="rounded" />
 					<?php endif; ?>
