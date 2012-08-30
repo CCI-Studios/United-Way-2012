@@ -35,7 +35,7 @@ $typekit = 'ubu2hmw';
 
  	<jdoc:include type="head" />
 
-	<meta name="viewport" content="width=940px, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="shortcut icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
 
