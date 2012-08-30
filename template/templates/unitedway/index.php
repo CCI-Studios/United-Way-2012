@@ -65,6 +65,10 @@ $typekit = 'ubu2hmw';
 </head>
 
 <body class="<?= $menu ?>">
+	
+	<div id="mobile-menu" class="visible-phone">
+		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
+	</div>
 
 	<div id="wrapper">
 		
