@@ -17,18 +17,16 @@
 		border: 2px solid #efefef;
 		border-radius: 14px;
 		width: 180px;
+		
+		padding-left: 10px;
 	}
 	
 	button {
-		position: absolute;
 		top: 5px;
 		right: 10px;
-		width: 26px;
-		height:25px;
-		background: url('../images/icon_search.png') center center no-repeat;
-		
-		border: none;
-		text-indent: -9999px;
+		background-size: 100%;
+	}
+}
 	}
 }
 
