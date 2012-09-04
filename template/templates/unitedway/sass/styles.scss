@@ -17,6 +17,33 @@
 	border: 4px solid #fff;
 }
 
+//icons
+
+.icon-goals h3 {
+	background-image: url('../images/icon_goals.png');
+	padding-left: 35px;
+}
+
+.icon-downloads h3 {
+	background-image: url('../images/icon_downloads.png');
+	padding-left: 35px;
+}
+
+.icon-news h3 {
+	background-image: url('../images/icon_news.png');
+	padding-left: 35px;
+}
+
+.icon-events h3 {
+	background-image: url('../images/icon_events.png');
+	padding-left: 35px;
+}
+
+.icon-twitter-bird {
+	background: url('../images/icon_twitter-bird.png') left center no-repeat;
+	background-size: 41px;
+	padding-left: 53px;
+}
 .btn-navbar {
 	@include btn-navbar;
 }
