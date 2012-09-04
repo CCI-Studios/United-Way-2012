@@ -41,9 +41,40 @@
 	}
 }
 
-#sidebar .module {
-	padding-bottom: 20px;
-	margin-bottom: 10px;
+#sidebar,
+#bottom {
+	.module {
+		background-size: inherit;
+	}
+}
+
+//widths of sidebar mods if more are added
+
+#sidebar {
+
+	.module,
+	.module:nth-child(4),
+	.module:nth-child(7),
+	.module:nth-child(10) {
+		width: 97.875%;
+		margin-left: 2.127659574%; //20px
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+		clear: both;
+	}
+	
+	.module:nth-child(2),
+	.module:nth-child(3),
+	.module:nth-child(5),
+	.module:nth-child(6),
+	.module:nth-child(8),
+	.module:nth-child(9),
+	.module:nth-child(11),
+	.module:nth-child(12) {
+		width: 47.872340426%;
+		float: left;
+		clear: none;
+	}
 }
 
 #bottom .module {
