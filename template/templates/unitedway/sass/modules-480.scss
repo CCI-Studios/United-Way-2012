@@ -48,14 +48,12 @@
 }
 
 #bottom .module {
-	width: 48.936170213%;
+	width: 47.872340426%;
+	margin-left: 2.127659574%; //20px
 	float: left;
+	padding-bottom: 40px;
 	
 	&.first {
 		width: 100%;
-	}
-	
-	&.third {
-		margin-left: 2.127659574%; //20px
 	}
 }
