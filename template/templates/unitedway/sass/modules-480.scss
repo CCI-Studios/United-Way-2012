@@ -83,7 +83,7 @@
 	float: left;
 	padding-bottom: 40px;
 	
-	&.first {
+	&:first-child {
 		width: 100%;
 	}
 }
