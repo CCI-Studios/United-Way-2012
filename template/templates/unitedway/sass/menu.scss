@@ -113,6 +113,7 @@
 	
 	&.mobile {
 		font-size: 22px;
+		-webkit-overflow-scrolling: touch;
 		
 		li {
 			line-height: 38px;
