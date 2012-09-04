@@ -44,6 +44,53 @@
 	background-size: 41px;
 	padding-left: 53px;
 }
+
+//colors
+
+.colored-red {
+	
+	h3 {
+		color: $red;
+	}
+	
+	ul li {
+		background: url('../images/bullet_red.png');
+	}
+}
+
+.colored-blue {
+	
+	h3 {
+		color: $blue;
+	}
+	
+	ul li {
+		background: url('../images/bullet_blue.png');
+	}
+}
+
+.colored-yellow {
+	
+	h3 {
+		color: $yellow;
+	}
+	
+	ul li {
+		background: url('../images/bullet_yellow.png');
+	}
+}
+
+.colored-blue {
+	
+	h3 {
+		color: $blue;
+	}
+	
+	ul li {
+		background: url('../images/bullet_blue.png');
+	}
+}
+
 .btn-navbar {
 	@include btn-navbar;
 }
