@@ -45,6 +45,13 @@
 		&:first-child {
 			padding-left: 0;
 		}
+		&.last {
+			float: right;
+			
+			a {
+				color: $red;
+			}
+		}
 		&:hover a,
 		&.active a {
 			color: black;
