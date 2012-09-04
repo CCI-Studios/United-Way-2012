@@ -32,6 +32,7 @@
 	}
 }
 
+//twitter feed
 .module.feed-twitter {
 	float: left;
 	
@@ -47,8 +48,15 @@
 		margin: 0;
 	}
 	
+	.twitter-time {
+		color: $red;
+		font-weight: bold;
+		margin-left: 15px;
+	}
+	
 }
 
+//social media links
 .module.social-links {
 	margin-top: 15px;
 	display: inline-block;
