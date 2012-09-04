@@ -647,7 +647,8 @@ body.menu-open #wrapper {
 
 #top {
   padding: 20px 0;
-  background: url("../images/divider_dotted.png") top center repeat-x; }
+  background: url("../images/divider_dotted.png") top center repeat-x;
+  text-align: center; }
 
 #main {
   padding: 20px 0;
@@ -694,17 +695,22 @@ body.menu-open #wrapper {
     border: none;
     text-indent: -9999px; }
 
-.module.feed-twitter .twitter-title {
-  font-size: 15px;
-  color: #ee2e24;
-  margin: 0 20px 10px 0;
-  padding-top: 0;
-  float: left;
-  width: 145px; }
-.module.feed-twitter .twitter-tweet {
-  margin: 0;
-  text-align: center;
+.module.feed-twitter {
   float: left; }
+  .module.feed-twitter .twitter-title {
+    font-size: 15px;
+    color: #ee2e24;
+    margin: 0 auto 10px;
+    padding-top: 0;
+    width: 145px; }
+  .module.feed-twitter .twitter-tweet {
+    margin: 0; }
+
+.module.social-links {
+  margin-top: 15px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
 #sidebar .module h3,
 #bottom .module h3 {
@@ -761,11 +767,11 @@ body.menu-open #wrapper {
   font-weight: 600; }
   .primary li:first-child {
     padding-left: 0; }
+  .primary li:hover a, .primary li.active a {
+    color: black;
+    text-decoration: none; }
   .primary a {
     color: #5f6062; }
-    .primary a:hover {
-      color: black;
-      text-decoration: none; }
 
 .top {
   float: right;
@@ -923,6 +929,9 @@ body.menu-open #wrapper {
   padding-top: 30px;
   background: url("../images/bg_headerRepeat-desktop.png") top center no-repeat; }
 
+#top {
+  text-align: none; }
+
 .module.logo {
   width: auto;
   float: left;
@@ -945,10 +954,13 @@ body.menu-open #wrapper {
     right: 10px;
     background-size: 100%; }
 
+.module.feed-twitter .twitter-title {
+  float: left;
+  margin: 0 20px 10px 0; }
 .module.feed-twitter .twitter-tweet {
-  width: auto;
+  max-width: 580px;
   text-align: left;
-  float: none; }
+  margin-left: 165px; }
 
 #bottom .module {
   width: 48.936170213%;
@@ -968,6 +980,14 @@ body.menu-open #wrapper {
 
 .module.search-bar input {
   width: 300px; }
+
+.module.feed-twitter {
+  width: 80%; }
+
+.module.social-links {
+  width: 20%;
+  float: right;
+  margin-top: 0; }
 
 #bottom .module {
   width: 34.042553191%%;
