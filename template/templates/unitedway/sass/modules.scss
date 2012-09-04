@@ -104,6 +104,16 @@
 	}
 }
 
+#sidebar .module {
+	&.bg-logo-red,
+	&.bg-logo-blue,
+	&.bg-logo-yellow {
+		.custom {
+			min-height: 125px;
+		}
+	}
+}
+
 //show-menu 
 
 .module.show-menu {
