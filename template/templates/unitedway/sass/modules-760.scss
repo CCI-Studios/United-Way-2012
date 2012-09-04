@@ -12,6 +12,32 @@
 		text-align: left;
 	}
 }
+
+#sidebar {
+	
+	.module,
+	.module:nth-child(5),
+	.module:nth-child(9) {
+		width: 97.875%;
+		margin-left: 2.127659574%; //20px
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+		clear: both;
+	}
+	
+	.module:nth-child(2),
+	.module:nth-child(3),
+	.module:nth-child(4),
+	.module:nth-child(6),
+	.module:nth-child(7),
+	.module:nth-child(8),
+	.module:nth-child(10),
+	.module:nth-child(11),
+	.module:nth-child(12) {
+		width: 31.205673759%;
+		float: left;
+		clear: none;
+	}
 }
 
 .module.social-links {
