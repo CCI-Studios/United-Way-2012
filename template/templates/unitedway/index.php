@@ -83,6 +83,13 @@ $typekit = 'ubu2hmw';
 				<jdoc:include type="modules" name="masthead" style="rounded" />
 			</div>
 			<?php endif; ?>
+			
+			<?php if ($this->countModules('top')): ?>
+			<div id="top">
+				<jdoc:include type="modules" name="top" style="rounded" />
+				<div class="clear"></div>
+			</div>
+			<?php endif; ?>
 
 			<div id="prebody">
 				<jdoc:include type="modules" name="prebody" style="rounded" />
