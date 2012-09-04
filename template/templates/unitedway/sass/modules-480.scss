@@ -31,12 +31,14 @@
 .module.feed-twitter {
 	
 	.twitter-title {
+		float: left;
+		margin: 0 20px 10px 0;
 	}
 	
 	.twitter-tweet {
-		width: auto;
+		max-width: 580px;
 		text-align: left;
-		float: none;
+		margin-left: 165px;
 	}
 }
 

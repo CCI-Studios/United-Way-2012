@@ -33,22 +33,27 @@
 }
 
 .module.feed-twitter {
+	float: left;
 	
 	.twitter-title {
 		font-size: 15px;
 		color: $red;
-		margin: 0 20px 10px 0;
+		margin: 0 auto 10px;
 		padding-top: 0;
-		float: left;
 		width: 145px;
 	}
 	
 	.twitter-tweet {
 		margin: 0;
-		text-align: center;
-		float: left;
 	}
 	
+}
+
+.module.social-links {
+	margin-top: 15px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 
 //colored modules
