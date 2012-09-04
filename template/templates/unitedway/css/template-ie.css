@@ -625,7 +625,7 @@ body.menu-open #wrapper {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 5%; }
+  padding: 0 2.5%; }
 
 #wrapper {
   background-color: #ffffff;
@@ -639,18 +639,22 @@ body.menu-open #wrapper {
   transition: left 0.3s ease-in-out; }
 
 #header {
-  padding: 4px 0 20px;
+  padding: 0 0 20px;
   background: url("../images/bg_headerRepeat-mobile.png") top center repeat-x; }
 
 #masthead {
   padding: 0 0 20px; }
+
+#top {
+  padding: 20px 0;
+  background: url("../images/divider_dotted.png") top center repeat-x; }
 
 #main {
   padding: 20px 0;
   background: url("../images/divider_dotted.png") top center repeat-x; }
 
 #footer {
-  padding: 20px 0;
+  padding: 20px 0 0;
   background: url("../images/bg_footerRepeat.png") top center repeat-x;
   min-height: 174px;
   font-size: 12px;
@@ -668,21 +672,43 @@ body.menu-open #wrapper {
 .module.logo {
   width: 100%;
   text-align: center;
-  padding-top: 23px; }
+  padding-top: 40px; }
 
-.module.search-bar-mobile {
-  position: relative;
-  float: right;
-  height: 26px; }
-  .module.search-bar-mobile input {
+.module.search-bar {
+  position: absolute;
+  top: 1px;
+  right: 10px; }
+  .module.search-bar input {
     border: 1px solid #efefef;
     border-radius: 7px;
-    padding-left: 10px; }
+    padding-left: 5px;
+    height: 26px; }
+  .module.search-bar button {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    width: 26px;
+    height: 25px;
+    background: url("../images/icon_search.png") center center no-repeat;
+    background-size: 75%;
+    border: none;
+    text-indent: -9999px; }
+
+.module.feed-twitter .twitter-title {
+  font-size: 15px;
+  color: #ee2e24;
+  margin: 0 20px 10px 0;
+  padding-top: 0;
+  float: left;
+  width: 145px; }
+.module.feed-twitter .twitter-tweet {
+  margin: 0;
+  text-align: center;
+  float: left; }
 
 #sidebar .module h3,
 #bottom .module h3 {
   font-size: 15px;
-  padding-left: 35px;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 23px; }
@@ -702,33 +728,6 @@ body.menu-open #wrapper {
   #sidebar .module .custom *:first-child,
   #bottom .module .custom *:first-child {
     margin-top: 0; }
-
-.module.red h3 {
-  color: #ee2e24; }
-.module.red ul li {
-  background: url("../images/bullet_red.png"); }
-
-.module.blue h3 {
-  color: #10247b; }
-.module.blue ul li {
-  background: url("../images/bullet_blue.png"); }
-
-.module.yellow h3 {
-  color: #eea928; }
-.module.yellow ul li {
-  background: url("../images/bullet_yellow.png"); }
-
-.module.goals h3 {
-  background: url("../images/icon_goals.png"); }
-
-.module.downloads h3 {
-  background: url("../images/icon_downloads.png"); }
-
-.module.news h3 {
-  background: url("../images/icon_news.png"); }
-
-.module.events h3 {
-  background: url("../images/icon_events.png"); }
 
 .module.show-menu {
   position: absolute;
@@ -834,6 +833,47 @@ body.menu-open #wrapper {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
   border: 4px solid #fff; }
 
+.icon-goals h3 {
+  background-image: url("../images/icon_goals.png");
+  padding-left: 35px; }
+
+.icon-downloads h3 {
+  background-image: url("../images/icon_downloads.png");
+  padding-left: 35px; }
+
+.icon-news h3 {
+  background-image: url("../images/icon_news.png");
+  padding-left: 35px; }
+
+.icon-events h3 {
+  background-image: url("../images/icon_events.png");
+  padding-left: 35px; }
+
+.icon-twitter-bird {
+  background: url("../images/icon_twitter-bird.png") left center no-repeat;
+  background-size: 41px;
+  padding-left: 53px; }
+
+.colored-red h3 {
+  color: #ee2e24; }
+.colored-red ul li {
+  background: url("../images/bullet_red.png"); }
+
+.colored-blue h3 {
+  color: #10247b; }
+.colored-blue ul li {
+  background: url("../images/bullet_blue.png"); }
+
+.colored-yellow h3 {
+  color: #eea928; }
+.colored-yellow ul li {
+  background: url("../images/bullet_yellow.png"); }
+
+.colored-blue h3 {
+  color: #10247b; }
+.colored-blue ul li {
+  background: url("../images/bullet_blue.png"); }
+
 .btn-navbar {
   display: inline-block;
   *display: inline;
@@ -890,24 +930,25 @@ body.menu-open #wrapper {
   text-align: none;
   padding-top: 0; }
 
-.module.search-bar-desktop {
+.module.search-bar {
   float: right;
   margin-top: 30px;
   position: relative; }
-  .module.search-bar-desktop input {
+  .module.search-bar input {
     height: 37px;
     border: 2px solid #efefef;
     border-radius: 14px;
-    width: 180px; }
-  .module.search-bar-desktop button {
-    position: absolute;
+    width: 180px;
+    padding-left: 10px; }
+  .module.search-bar button {
     top: 5px;
     right: 10px;
-    width: 26px;
-    height: 25px;
-    background: url("../images/icon_search.png") center center no-repeat;
-    border: none;
-    text-indent: -9999px; }
+    background-size: 100%; }
+
+.module.feed-twitter .twitter-tweet {
+  width: auto;
+  text-align: left;
+  float: none; }
 
 #bottom .module {
   width: 48.936170213%;
@@ -925,7 +966,7 @@ body.menu-open #wrapper {
 .tablet-hidden, .mobile-hidden {
   display: none; }
 
-.module.search-bar-desktop input {
+.module.search-bar input {
   width: 300px; }
 
 #bottom .module {
