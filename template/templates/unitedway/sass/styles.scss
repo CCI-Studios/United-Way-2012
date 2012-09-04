@@ -17,6 +17,14 @@
 	border: 4px solid #fff;
 }
 
+//positioned bottom left
+a.read-more {
+	color: $dark-grey;
+	font-weight: bold;
+}
+
+//mod backgrounds
+
 .bg-logo-red {
 	background: url('../images/bg_logo-red.png');
 }
@@ -60,7 +68,7 @@
 //colors
 
 .colored-red {
-	
+
 	h3 {
 		color: $red;
 	}
