@@ -101,7 +101,7 @@
 .vmenu {
 
 	.menu {
-		margin: 0;
+		margin: 1em 0;
 		padding: 0;
 		list-style: none;
 	}
@@ -124,4 +124,8 @@
 		}
 	}
 	
+}
+
+.sitemap {
+	font-size: 16px;
 }
