@@ -65,7 +65,6 @@ $typekit = 'ubu2hmw';
 </head>
 
 <body class="<?= $menu ?>">
-	
 	<div id="mobile-menu" class="visible-phone">
 		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
 	</div>
@@ -138,12 +137,12 @@ $typekit = 'ubu2hmw';
 		</div> <!-- end of container -->
 
 		<div id="footer"><div class="container">
-			<jdoc:include type="modules" name="footer" style="xhtml" />
 			<div id="copyright">
 				<div>&copy; <?php echo date('Y') ?> United Way Sarnia-Lambton. All Rights Reserved.<br/>
 							Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
 				</div>
 			</div>
+			<jdoc:include type="modules" name="footer" style="rounded" />
 		</div></div>
 		
 		<div id="debug">
