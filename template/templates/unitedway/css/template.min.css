@@ -751,13 +751,15 @@ body.menu-open #wrapper {
   min-height: 125px; }
 
 #copyright {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  line-height: 1.3em; }
 
 .module.footer-logos {
   margin-bottom: 1em; }
 
 .module.back-to-top {
-  font-size: 15px; }
+  font-size: 15px;
+  font-weight: 600; }
 
 .module.show-menu {
   position: absolute;
