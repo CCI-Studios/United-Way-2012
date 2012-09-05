@@ -44,42 +44,30 @@
 #sidebar,
 #bottom {
 	.module {
-		background-size: inherit;
+		background-size: 110px;
 	}
 }
 
 //widths of sidebar mods if more are added
 
-#sidebar {
-
-	.module,
-	.module:nth-child(4),
-	.module:nth-child(7),
-	.module:nth-child(10) {
-		width: 97.875%;
-		margin-left: 2.127659574%; //20px
-		padding-bottom: 20px;
-		margin-bottom: 10px;
-		clear: both;
+#sidebar .module {
+	width: 50%;
+	padding-left: 2.127659574%;
+	float: left;
+	clear: none;
+	
+	&:first-child {
+		width: 100%;
 	}
 	
-	.module:nth-child(2),
-	.module:nth-child(3),
-	.module:nth-child(5),
-	.module:nth-child(6),
-	.module:nth-child(8),
-	.module:nth-child(9),
-	.module:nth-child(11),
-	.module:nth-child(12) {
-		width: 47.872340426%;
-		float: left;
-		clear: none;
+	.home & .module {
+		padding-bottom: 0;
 	}
 }
 
 #bottom .module {
-	width: 47.872340426%;
-	margin-left: 2.127659574%; //20px
+	width: 50%;
+	padding-left: 2.127659574%; //20px
 	float: left;
 	padding-bottom: 40px;
 	
