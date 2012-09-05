@@ -411,11 +411,11 @@ h6 {
   font-size: 1.0em; }
 
 a, a:active, a:visited {
-  color: red;
+  color: #ee2e24;
   text-decoration: none; }
 
 a:hover {
-  color: teal;
+  color: #ee2e24;
   text-decoration: underline; }
 
 img {
@@ -827,7 +827,7 @@ body.menu-open #wrapper {
       color: white; }
 
 .vmenu .menu {
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
   list-style: none; }
 .vmenu ul ul {
@@ -840,6 +840,9 @@ body.menu-open #wrapper {
     line-height: 38px; }
   .vmenu.mobile a {
     color: #ffffff; }
+
+.sitemap {
+  font-size: 16px; }
 
 .clr, .clear {
   clear: both; }
