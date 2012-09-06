@@ -33,8 +33,12 @@ body.menu-open #wrapper {
 }
 
 #main {
-	padding: 20px 0;
+	padding: 0 0 20px;
 	background: url('../images/divider_dotted.png') top center repeat-x;
+}
+
+#precontent {
+	padding-top: 20px;
 }
 
 #footer {
