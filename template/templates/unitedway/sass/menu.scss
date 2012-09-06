@@ -33,6 +33,10 @@
 
 		li {
 			white-space: nowrap;
+			
+			&.last a {
+				color: $text;
+			}
 		}
 	}
 }
