@@ -3,14 +3,14 @@ set :stages, %w(staging production)
 set :default_stage, "staging"
 require "capistrano/ext/multistage"
 
-set :application, "APPLICATION_NAME"
+set :application, "theunitedway.on.ca"
 
 # repository info
-set :repository,  "git@github.com:CCI-Studios/PROJECT.git"
+set :repository,  "git@github.com:CCI-Studios/United-Way-2012.git"
 set :scm, :git
 
 # ssh settings
-set :user, "USERNAME"
+set :user, "uway"
 set :use_sudo, false
 
 # Joomla
