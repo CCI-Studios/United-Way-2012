@@ -102,10 +102,13 @@ $typekit = 'ubu2hmw';
 								echo 'wide2';
 							}
 					?>">
+					
 					<?php if ($this->countModules('precontent')): ?>
+					<div id="precontent">
 						<jdoc:include type="modules" name="precontent" style="rounded" />
+					</div>
 					<?php endif; ?>
-
+					
 					<jdoc:include type="message" />
 					<article>
 						<jdoc:include type="component" />
