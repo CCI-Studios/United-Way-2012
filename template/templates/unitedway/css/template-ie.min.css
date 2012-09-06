@@ -463,6 +463,23 @@ button {
   width: auto;
   overflow: visible; }
 
+.multiline_start {
+  clear: left !important; }
+
+.cfdiv_header {
+  min-width: 232px; }
+
+.ccms_form_element {
+  padding-left: 0; }
+  .ccms_form_element label {
+    width: auto;
+    min-width: 237px; }
+  .ccms_form_element p {
+    margin: 0; }
+
+.small-message {
+  margin-left: 0; }
+
 /*
 Grids should be setup using the following structure:
 
@@ -651,8 +668,11 @@ body.menu-open #wrapper {
   text-align: center; }
 
 #main {
-  padding: 20px 0;
+  padding: 0 0 20px;
   background: url("../images/divider_dotted.png") top center repeat-x; }
+
+#precontent {
+  padding-top: 20px; }
 
 #footer {
   text-align: center;
@@ -787,6 +807,8 @@ body.menu-open #wrapper {
   padding: 0; }
   .hmenu ul ul li {
     white-space: nowrap; }
+    .hmenu ul ul li.last a {
+      color: #4e4e4e; }
 
 .primary {
   padding: 24px 0 0;
