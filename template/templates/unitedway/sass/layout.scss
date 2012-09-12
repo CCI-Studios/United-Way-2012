@@ -55,7 +55,16 @@ body.menu-open #wrapper {
 	}
 }
 
-#content.wide1 {
+#content {
+	float: left;
+
+	&.wide1 {
+		width: 100%;
+	}
+}
+
+#sidebar {
+	float: left;
 	width: 100%;
 }
 
