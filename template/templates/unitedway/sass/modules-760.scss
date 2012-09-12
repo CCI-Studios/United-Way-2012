@@ -16,6 +16,10 @@
 .module.sidebar {
 	float: left;
 	clear: none;
+
+	.full & {
+		width: 33.333333333%%;
+	}
 }
 
 .module.social-links {
