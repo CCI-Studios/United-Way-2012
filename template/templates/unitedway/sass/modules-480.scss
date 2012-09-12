@@ -54,10 +54,6 @@
 	float: left;
 	clear: none;
 	
-	&:first-child {
-		width: 100%;
-	}
-	
 	.home & .module {
 		padding-bottom: 0;
 	}
