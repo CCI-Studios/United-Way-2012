@@ -1,0 +1,48 @@
+.items-row {
+	clear: both;
+
+	p {
+		margin: .5em 0;
+	}
+}
+
+.cat-items {
+	margin-top: 1em;
+}
+
+
+.category-list {
+
+	tr {
+		margin-bottom: 1em;
+		display: block;
+
+		.list-title {
+			display: block;
+		}
+
+		.list-date {
+			min-width: 120px;
+			margin-left: 10px;
+		}
+	}
+}
+
+.pagination {
+
+	p.counter {
+		text-align: center;
+	}
+
+	ul {
+		padding: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			padding: 0 10px;
+		}
+	}
+}
