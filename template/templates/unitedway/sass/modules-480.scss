@@ -41,17 +41,15 @@
 	}
 }
 
-#sidebar,
-#bottom {
-	.module {
-		background-size: 110px;
-	}
+.module.sidebar,
+.module.bottom {
+	background-size: 110px;
 }
 
 //widths of sidebar mods if more are added
 
-#sidebar .module {
-	width: 50%;
+.module.sidebar {
+	width: 100%;
 	padding-left: 2.127659574%;
 	float: left;
 	clear: none;
@@ -65,7 +63,7 @@
 	}
 }
 
-#bottom .module {
+.module.bottom {
 	width: 50%;
 	padding-left: 2.127659574%; //20px
 	float: left;

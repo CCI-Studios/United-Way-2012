@@ -13,8 +13,7 @@
 	}
 }
 
-#sidebar .module {
-	width: 33.333333333%%;
+.module.sidebar {
 	float: left;
 	clear: none;
 }
@@ -25,7 +24,7 @@
 	margin-top: 0;
 }
 
-#bottom .module {
+.module.bottom {
 	width: 33.333333333%;
 	&.first {
 		width: 33.333333333%;
