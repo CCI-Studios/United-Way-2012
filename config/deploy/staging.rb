@@ -7,4 +7,4 @@ role :app, "ccistudios.com"
 # directories
 set :deploy_to, "/home/uway/subdomains/dev"
 set :public, "#{deploy_to}/public_html"
-set :extensions, %w[thermometer public template]
+set :extensions, %w[thermometer mod_slideshow public template]
