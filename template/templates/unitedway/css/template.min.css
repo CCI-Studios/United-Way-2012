@@ -385,14 +385,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0;
-  padding: .83em 0; }
+  padding: 0 0 15px; }
 
 .item-page h1,
 .blog > h1,
 .category-list > h1 {
   font-size: 15px;
   color: #ee2e24;
-  background: url("../images/divider_dotted.png") bottom center repeat-x; }
+  background: url("../images/divider_dotted.png") bottom center repeat-x;
+  margin-bottom: 1em;
+  padding-top: 15px; }
 
 .items-row h1,
 h2 {
@@ -400,8 +402,7 @@ h2 {
   padding-bottom: 0; }
 
 h3 {
-  font-size: 16px;
-  padding-bottom: 0; }
+  font-size: 16px; }
 
 h1 {
   font-size: 2em; }
@@ -415,6 +416,9 @@ h5 {
 h6 {
   font-size: 1.0em; }
 
+p {
+  margin-top: 0; }
+
 a, a:active, a:visited {
   color: #ee2e24;
   text-decoration: none; }
@@ -422,6 +426,9 @@ a, a:active, a:visited {
 a:hover {
   color: #ee2e24;
   text-decoration: underline; }
+
+ul, ol {
+  margin-top: 0; }
 
 img {
   max-width: 100%;
@@ -562,7 +569,6 @@ label {
 .style-8 {
   overflow: auto; }
   .style-8 h3 {
-    margin: 0 0 1em;
     text-align: center; }
   .style-8 input {
     width: 95%; }
@@ -814,12 +820,21 @@ body.menu-open #wrapper {
   #footer a {
     color: #ffffff; }
 
-#content.wide1 {
+#content {
+  float: left; }
+  #content.wide1 {
+    width: 100%; }
+
+#sidebar {
+  float: left;
   width: 100%; }
 
 #mobile-menu {
   position: fixed;
   padding: 30px 40px; }
+
+.module h3 {
+  padding-top: 15px; }
 
 .module.logo {
   width: 100%;
@@ -868,37 +883,43 @@ body.menu-open #wrapper {
   *zoom: 1;
   text-align: right; }
 
-#sidebar .module,
-#bottom .module {
+.module.thermometer .custom {
+  text-align: center; }
+
+.module.sidebar,
+.module.bottom {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 25%;
   position: relative; }
-  #sidebar .module h3,
-  #bottom .module h3 {
+  .module.sidebar h3,
+  .module.bottom h3 {
     font-size: 15px;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 23px; }
-  #sidebar .module ul,
-  #bottom .module ul {
+    background-size: 23px;
+    padding-bottom: 13px; }
+  .module.sidebar ul,
+  .module.bottom ul {
     list-style: none;
     padding: 0; }
-    #sidebar .module ul li,
-    #bottom .module ul li {
+    .module.sidebar ul li,
+    .module.bottom ul li {
       padding-left: 10px;
       background-repeat: no-repeat;
       background-position: left 5px; }
-#sidebar .module .custom,
-#bottom .module .custom {
-  padding-top: 20px;
-  background: url("../images/divider_dotted.png") top center repeat-x; }
-  #sidebar .module .custom *:first-child,
-  #bottom .module .custom *:first-child {
-    margin-top: 0; }
+  .module.sidebar .custom,
+  .module.bottom .custom {
+    padding-top: 20px;
+    background: url("../images/divider_dotted.png") top center repeat-x; }
+    .module.sidebar .custom > *:first-child,
+    .module.bottom .custom > *:first-child {
+      margin-top: 0; }
 
-#sidebar .module.bg-logo-red .custom, #sidebar .module.bg-logo-blue .custom, #sidebar .module.bg-logo-yellow .custom {
-  min-height: 125px; }
+.module.sidebar {
+  margin-top: 1em; }
+  .module.sidebar.bg-logo-red .custom, .module.sidebar.bg-logo-blue .custom, .module.sidebar.bg-logo-yellow .custom {
+    min-height: 125px; }
 
 #copyright {
   margin-bottom: 1em;
@@ -930,7 +951,8 @@ body.menu-open #wrapper {
     display: block; }
 .hmenu .menu > li > a,
 .hmenu .menu > li > span {
-  display: block; }
+  display: block;
+  cursor: pointer; }
 .hmenu ul ul {
   list-style: none;
   padding-left: 0;
@@ -1169,6 +1191,43 @@ a.read-more {
     *zoom: 1;
     padding: 0 10px; }
 
+.module.thermometer .mod_thermometer {
+  margin-left: 30px; }
+  .module.thermometer .mod_thermometer:first-child {
+    margin-left: 0px; }
+.module.thermometer h2,
+.module.thermometer p {
+  color: #ee2e24; }
+.module.thermometer h2 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 0; }
+.module.thermometer p {
+  font-size: 12px; }
+.module.thermometer .thermo {
+  background: url("../images/bg_thermo.jpg") top left no-repeat;
+  font-size: 12px;
+  min-height: 166px; }
+  .module.thermometer .thermo ul {
+    margin: 0 0 0 26px;
+    min-height: 129px; }
+  .module.thermometer .thermo li {
+    background: url("../images/bullet_dash.png") left 8px no-repeat;
+    padding-left: 15px;
+    white-space: nowrap;
+    line-height: 1.3em;
+    text-align: left; }
+    .module.thermometer .thermo li:first-child {
+      color: #ee2e24; }
+.module.thermometer .mercury {
+  bottom: 0px;
+  left: 11px;
+  width: 11px;
+  background: url("../images/bg_mercury-repeat.png") bottom center repeat-y; }
+  .module.thermometer .mercury > div {
+    background: url("../images/bg_mercury-top.png") top center no-repeat;
+    padding-top: 3px; }
+
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
   display: block; }
@@ -1218,26 +1277,24 @@ a.read-more {
     max-width: 580px;
     margin-left: 165px; }
 
-  #sidebar .module,
-  #bottom .module {
+  .module.sidebar,
+  .module.bottom {
     background-size: 110px; }
 
-  #sidebar .module {
-    width: 50%;
+  .module.sidebar {
+    width: 100%;
     padding-left: 2.127659574%;
     float: left;
     clear: none; }
-    #sidebar .module:first-child {
-      width: 100%; }
-    .home #sidebar .module .module {
+    .home .module.sidebar .module {
       padding-bottom: 0; }
 
-  #bottom .module {
+  .module.bottom {
     width: 50%;
     padding-left: 2.127659574%;
     float: left;
     padding-bottom: 40px; }
-    #bottom .module:first-child {
+    .module.bottom:first-child {
       width: 100%; }
 
   .tablet-visible, .mobile-visible,
@@ -1263,19 +1320,20 @@ a.read-more {
     .module.feed-twitter .twitter-tweet {
       text-align: left; }
 
-  #sidebar .module {
-    width: 33.333333333%%;
+  .module.sidebar {
     float: left;
     clear: none; }
+    .full .module.sidebar {
+      width: 33.333333333%%; }
 
   .module.social-links {
     width: 20%;
     float: right;
     margin-top: 0; }
 
-  #bottom .module {
+  .module.bottom {
     width: 33.333333333%; }
-    #bottom .module.first {
+    .module.bottom.first {
       width: 33.333333333%; }
 
   #copyright {
@@ -1305,19 +1363,23 @@ a.read-more {
     padding: 0 10px; }
 
   #content {
-    width: 65.957446809%;
-    float: left; }
+    width: 65.957446809%; }
 
   #sidebar {
     width: 34.042553191%;
     padding-left: 2.127659574%;
-    margin-top: -2px;
-    margin-left: 0;
-    float: left; }
-
-  #sidebar .module:nth-child(n) {
-    width: 100%;
     margin-left: 0; }
+
+  .module.thermometer .custom {
+    text-align: inherit; }
+
+  .module.sidebar {
+    margin-top: 0; }
+    .home .module.sidebar {
+      margin-top: 1em; }
+    .module.sidebar:nth-child(n) {
+      width: 100%;
+      margin-left: 0; }
 
   .primary {
     font-size: 14px; }
