@@ -39,6 +39,9 @@
 //twitter feed
 .module.feed-twitter {
 	float: left;
+	background: url('../images/icon_twitter-bird.png') top center no-repeat;
+	background-size: 143px;
+	padding: 40px 0 0 0;
 	
 	.twitter-title {
 		font-size: 15px;
@@ -48,16 +51,13 @@
 		width: 145px;
 	}
 	
-	.twitter-tweet {
+	#twitter_update_list {
 		margin: 0;
+
+		li {
+			list-style: none;
+		}
 	}
-	
-	.twitter-time {
-		color: $red;
-		font-weight: bold;
-		margin-left: 15px;
-	}
-	
 }
 
 //social media links
