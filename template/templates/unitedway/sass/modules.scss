@@ -73,6 +73,11 @@
 #bottom {
 	
 	.module {
+.module.thermometer {
+	.custom {
+		text-align: center;
+	}
+}
 		background-repeat: no-repeat;
 		background-position: bottom right;
 		background-size: 25%;
