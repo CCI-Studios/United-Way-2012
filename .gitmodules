@@ -1,0 +1,3 @@
+[submodule "mod_slideshow"]
+	path = mod_slideshow
+	url = git@github.com:CCI-Studios/com_slideshow.git
