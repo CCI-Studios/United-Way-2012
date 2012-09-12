@@ -1,0 +1,59 @@
+.module.thermometer {
+
+	.mod_thermometer {
+		margin-left: 30px;
+		&:first-child {
+			margin-left: 0px;
+		}
+	}
+
+	h2,
+	p {
+		color: $red;
+	}
+
+	h2 {
+		font-size: 15px;
+		font-weight: 700;
+		padding-top: 0;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	.thermo {
+		background: url('../images/bg_thermo.jpg') top left no-repeat;
+		font-size: 12px;
+		min-height: 166px;
+
+		ul {
+			margin: 0 0 0 26px;
+			min-height: 129px;
+		}
+
+		li {
+			background: url('../images/bullet_dash.png') left 8px no-repeat;
+			padding-left: 15px;
+			white-space: nowrap;
+			line-height: 1.3em;
+			text-align: left;
+
+			&:first-child {
+				color: $red;
+			}
+		}
+	}
+
+	.mercury {
+		bottom: 0px;
+		left: 11px;
+		width: 11px;
+		background: url('../images/bg_mercury-repeat.png') bottom center repeat-y;
+
+		> div {
+			background: url('../images/bg_mercury-top.png') top center no-repeat;
+			padding-top: 3px;
+		}
+	}
+}
