@@ -126,7 +126,7 @@ $typekit = 'ubu2hmw';
 				<?php endif; ?>
 
 				<?php if ($this->countModules('sidebar')): ?>
-					<div id="sidebar">
+					<div id="sidebar" class="<?php if($this->countModules('sidebar') > 2) { echo 'full'; } ?>">
 						<jdoc:include type="modules" name="sidebar" style="rounded" />
 					</div>
 					<div class="clear"></div>
