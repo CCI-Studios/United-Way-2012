@@ -2,13 +2,10 @@
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	width: 50%;
 }
 
 .mod_thermometer .thermo {
-	padding-top: 20px;
 
-	background: red;
 }
 
 .mod_thermometer .asdf {
@@ -16,20 +13,11 @@
 }
 
 .mod_thermometer ul {
-	margin: -20px 0 0 50px;
 	padding: 0;
-	border-left: 1px solid #333;
-
-	background: yellow;
 }
 
 .mod_thermometer .mercury {
 	position: absolute;
-	bottom: 0;
-	left: 10px;
-	width: 30px;
-
-	background: blue;
 }
 
 .mod_thermometer .ball {
