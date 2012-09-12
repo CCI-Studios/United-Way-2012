@@ -18,15 +18,16 @@
 @import "styles";
 @import "blog";
 @import "com_content";
+@import "thermometer";
 
 // @import "grid-320";
 @import "layout-320";
 @import "modules-320";
 @import "styles-320";
 @media only screen and (min-width:480px) {
+    @import "layout-480";
     @import "styles-480";
 	@import "modules-480";
-	@import "layout-480";
 }
 @media only screen and (min-width:760px) {
 	// @import "grid-760";
