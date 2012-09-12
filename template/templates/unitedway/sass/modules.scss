@@ -69,51 +69,51 @@
 	text-align: right;
 }
 
-#sidebar,
-#bottom {
-	
-	.module {
 .module.thermometer {
 	.custom {
 		text-align: center;
 	}
 }
+
+.module.sidebar,
+.module.bottom {
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 25%;
+	position: relative;
+
+	h3 {
+		font-size: 15px;
 		background-repeat: no-repeat;
-		background-position: bottom right;
-		background-size: 25%;
-		position: relative;
-		
-		h3 {
-			font-size: 15px;
-			background-repeat: no-repeat;
-			background-position: left center;
-			background-size: 23px;
-		}
-		
-		ul {
-			list-style: none;
-			padding: 0;
-			
-			li {
-				padding-left: 10px;
-				background-repeat: no-repeat;
-				background-position: left 5px;
-			}
-		}
-		
+		background-position: left center;
+		background-size: 23px;
+		padding-bottom: 13px;
 	}
 	
-	.module .custom {
-		padding-top: 20px;
-		background: url('../images/divider_dotted.png') top center repeat-x;
+	ul {
+		list-style: none;
+		padding: 0;
+		
+		li {
+			padding-left: 10px;
+			background-repeat: no-repeat;
+			background-position: left 5px;
+		}
+	}
 
-		*:first-child {
+		.custom {
+			padding-top: 20px;
+			background: url('../images/divider_dotted.png') top center repeat-x;
+
+		> *:first-child {
 			margin-top: 0;
 		}
 	}
 }
 
-#sidebar .module {
+.module.sidebar {
+	margin-top: 1em;
+
 	&.bg-logo-red,
 	&.bg-logo-blue,
 	&.bg-logo-yellow {
