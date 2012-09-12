@@ -1,4 +1,9 @@
 #sidebar .module:nth-child(n) {
 	width: 100%;
 	margin-left: 0;
+.module.thermometer {
+	.custom {
+		text-align: inherit;
+	}
+}
 }
