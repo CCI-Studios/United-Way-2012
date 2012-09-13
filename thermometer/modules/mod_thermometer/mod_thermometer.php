@@ -16,7 +16,7 @@ JFactory::getDocument()->addStyleSheet('/modules/mod_thermometer/mod_thermometer
 					<? endfor; ?>
 					<li>0</li>
 				</ul>
-				<div class="mercury" style="height: <?= $params->get("current$tm")/$params->get("goal$tm")*100 ?>%;"><div></div></div>
+				<div class="mercury"><div style="height: <?= $params->get("current$tm")/$params->get("goal$tm")*100 ?>%;"></div></div>
 			</div>
 		</div>
 	</div>
