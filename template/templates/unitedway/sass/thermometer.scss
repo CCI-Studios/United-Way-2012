@@ -40,6 +40,8 @@
 			text-align: left;
 
 			&:first-child {
+				position: relative;
+				top: -5px;
 				color: $red;
 			}
 		}
