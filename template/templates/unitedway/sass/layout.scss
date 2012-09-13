@@ -41,6 +41,20 @@ body.menu-open #wrapper {
 	padding-top: 20px;
 }
 
+#content {
+	float: left;
+	width: 100%;
+
+	&.wide1 {
+		width: 100%;
+	}
+}
+
+#sidebar {
+	float: left;
+	width: 100%;
+}
+
 #footer {
 	text-align: center;
 	padding: 20px 0;
@@ -53,19 +67,6 @@ body.menu-open #wrapper {
 	a {
 		color: #ffffff;
 	}
-}
-
-#content {
-	float: left;
-
-	&.wide1 {
-		width: 100%;
-	}
-}
-
-#sidebar {
-	float: left;
-	width: 100%;
 }
 
 #mobile-menu {
