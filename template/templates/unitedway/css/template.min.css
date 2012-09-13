@@ -810,6 +810,16 @@ body.menu-open #wrapper {
 #precontent {
   padding-top: 20px; }
 
+#content {
+  float: left;
+  width: 100%; }
+  #content.wide1 {
+    width: 100%; }
+
+#sidebar {
+  float: left;
+  width: 100%; }
+
 #footer {
   text-align: center;
   padding: 20px 0;
@@ -819,15 +829,6 @@ body.menu-open #wrapper {
   color: #ffffff; }
   #footer a {
     color: #ffffff; }
-
-#content {
-  float: left; }
-  #content.wide1 {
-    width: 100%; }
-
-#sidebar {
-  float: left;
-  width: 100%; }
 
 #mobile-menu {
   position: fixed;
@@ -865,15 +866,11 @@ body.menu-open #wrapper {
   float: left;
   background: url("../images/icon_twitter-bird.png") top center no-repeat;
   background-size: 143px;
-  padding: 40px 0 0 0; }
-  .module.feed-twitter .twitter-title {
-    font-size: 15px;
-    color: #ee2e24;
-    margin: 0 auto 10px;
-    padding-top: 0;
-    width: 145px; }
+  padding: 40px 0 0 0;
+  width: 100%; }
   .module.feed-twitter #twitter_update_list {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
     .module.feed-twitter #twitter_update_list li {
       list-style: none; }
 
@@ -1219,15 +1216,62 @@ a.read-more {
     line-height: 1.3em;
     text-align: left; }
     .module.thermometer .thermo li:first-child {
+      position: relative;
+      top: -5px;
       color: #ee2e24; }
 .module.thermometer .mercury {
   bottom: 0px;
   left: 11px;
-  width: 11px;
-  background: url("../images/bg_mercury-repeat.png") bottom center repeat-y; }
+  height: 100%;
+  padding: 5px 0;
+  width: 11px; }
   .module.thermometer .mercury > div {
-    background: url("../images/bg_mercury-top.png") top center no-repeat;
-    padding-top: 3px; }
+    background: url("../images/bg_mercury.jpg") top center no-repeat;
+    position: absolute;
+    bottom: 0px;
+    width: 11px;
+    padding-top: 10px; }
+
+.mod_slideshow {
+  max-width: 100%;
+  height: 100%;
+  margin: 0; }
+  .mod_slideshow .slide {
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  .mod_slideshow .description {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 56%;
+    text-align: right;
+    color: #ee2e24;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.37);
+    font-weight: 600px;
+    line-height: 1em; }
+    .mod_slideshow .description h2 {
+      display: none; }
+  .mod_slideshow .controls > div {
+    background-size: 36px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    cursor: pointer; }
+  .mod_slideshow .controls > div {
+    position: absolute;
+    top: 35%; }
+  .mod_slideshow .controls .prev {
+    left: -10px;
+    background-image: url("../images/icon_prev-2x.png"); }
+  .mod_slideshow .controls .next {
+    right: -10px;
+    background-image: url("../images/icon_next-2x.png"); }
 
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
@@ -1321,6 +1365,8 @@ a.read-more {
     text-align: left;
     background-position: left center;
     padding: 10px 0 10px 150px; }
+    .module.feed-twitter #twitter_update_list {
+      padding-left: 40px; }
 
   .module.sidebar {
     float: left;
@@ -1358,7 +1404,20 @@ a.read-more {
 
   .phone-visible, .tablet-hidden
   .mobile-hidden, .desktop-hidden {
-    display: none; } }
+    display: none; }
+
+  .mod_slideshow .description {
+    display: block; }
+  .mod_slideshow .controls {
+    position: absolute;
+    right: 15px;
+    bottom: 8px; }
+    .mod_slideshow .controls > div {
+      background-size: 18px;
+      height: 18px;
+      width: 18px;
+      margin-left: 5px;
+      position: static; } }
 @media only screen and (min-width: 960px) {
   .container {
     width: 960px;
