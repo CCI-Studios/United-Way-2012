@@ -1,5 +1,7 @@
 .items-row {
 	clear: both;
+	overflow: auto;
+	margin-bottom: 1em;
 
 	p {
 		margin: .5em 0;
