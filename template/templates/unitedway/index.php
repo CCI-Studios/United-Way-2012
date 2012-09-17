@@ -65,12 +65,15 @@ $typekit = 'ubu2hmw';
 </head>
 
 <body class="<?= $menu ?>">
-	<div id="mobile-menu" class="visible-phone">
+	<div id="back-to-top"></div>
+	<div id="mobile-menu">
 		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
 	</div>
 
+	<div class="clear"></div>
+
 	<div id="wrapper">
-		
+
 		<div id="header"><div class="container">
 			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
