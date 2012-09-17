@@ -10,6 +10,10 @@ body {
 	overflow-x: hidden;
 }
 
+html, body {
+	min-height: 100%;
+}
+
 * { 
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
