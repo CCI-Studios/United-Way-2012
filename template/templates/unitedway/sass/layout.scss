@@ -4,6 +4,27 @@
 	padding: 0 2.5%;
 }
 
+#mobile-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 0;
+	background-color: $dark-red;
+	padding: 10px;
+
+	@include transition(bottom .3s ease-in-out);
+
+	body.menu-open & {
+		top: 0;
+		bottom: 0;
+		z-index: 10;
+		margin-top: 30px;
+	}
+}
+
 #wrapper {
 	position: relative;
 	left: 0;
@@ -64,9 +85,4 @@
 	a {
 		color: #ffffff;
 	}
-}
-
-#mobile-menu {
-	position: fixed;
-	padding: 30px 40px;
 }
