@@ -21,10 +21,9 @@ defined('_JEXEC') or die;
 	}
 ?>>
 <?php
-
 $last_level_one_id = 0;
 for($j=count($list)-1; $j>0; $j--){
-  if($list[$j]->level == 1){
+  if($list[$j]->level == 1) {
     $last_level_one_id = $list[$j]->id;
     break;
   }
