@@ -44,19 +44,40 @@
 	z-index: 1;
 	
 	li {
+
 		&:first-child {
 			padding-left: 0;
 		}
 		&.active {
-			a {
+			> a {
 				color: black;
 			}
 
 			li a {
 				color: white;
 			}
+
 		}
 	}
+
+	// .last {
+	// 	float: right;
+		
+	// 	a {	
+	// 		color: $red;
+	// 		&:hover {
+	// 			color: black;
+	// 		}
+	// 	}
+
+	// 	li.last {
+	// 		float: none;
+
+	// 		a {
+	// 			color: white;
+	// 		}
+	// 	}
+	// }
 
 	li > div { // submenu
 		display: none;
@@ -76,6 +97,7 @@
 		}
 
 		li {
+
 			&:hover {
 				background-color: $dark-red;
 			}
