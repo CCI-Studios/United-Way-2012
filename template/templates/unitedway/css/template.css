@@ -843,6 +843,18 @@ div.container
   #footer a {
     color: #ffffff; }
 
+#search-form {
+  padding: 20px 0 0; }
+  #search-form fieldset {
+    margin: 0; }
+
+#search-results {
+  padding: 10px 0 0; }
+  #search-results .result-text {
+    padding: 10px;
+    margin: 0 0 2em;
+    background-color: whitesmoke; }
+
 .module h3 {
   padding-top: 15px; }
 
@@ -960,7 +972,7 @@ div.container
 
 .category-module li h4 {
   padding: 0;
-  font-weight: normal; }
+  font-weight: 600; }
 .category-module li a {
   color: #4e4e4e; }
   .category-module li a:hover {
@@ -998,7 +1010,7 @@ div.container
   z-index: 1; }
   .primary li:first-child {
     padding-left: 0; }
-  .primary li.active a {
+  .primary li.active > a {
     color: black; }
   .primary li.active li a {
     color: white; }
