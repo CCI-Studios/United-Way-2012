@@ -5,12 +5,13 @@
 }
 
 #wrapper {
+	position: relative;
+	left: 0;
 	background-color: #ffffff;
 	position: relative;
 	z-index: 5;
 	box-shadow: 0 0 30px #333;
-	
-	@include transition(left .3s ease-in-out);	
+	min-height: 100%;
 }
 
 #header {
