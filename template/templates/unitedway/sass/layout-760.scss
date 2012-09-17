@@ -1,3 +1,13 @@
+#mobile-menu {
+	display: none;
+}
+
+#wrapper {
+	body.menu-open & {
+		position: relative;
+	}
+}
+
 #footer {
 	text-align: left;
 }

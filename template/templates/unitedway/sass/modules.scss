@@ -157,6 +157,11 @@
 	top: 1px;
 	height: 28px;
 	width: 40px;
+	z-index: 10;
+
+	body.menu-open & {
+		position: fixed;
+	}
 }
 
 //category mods
