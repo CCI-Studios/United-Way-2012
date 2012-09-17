@@ -66,14 +66,13 @@ $typekit = 'ubu2hmw';
 
 <body class="<?= $menu ?>">
 	<div id="back-to-top"></div>
-	<div id="mobile-menu">
-		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
-	</div>
 
 	<div class="clear"></div>
 
 	<div id="wrapper">
-
+			<div id="mobile-menu"><div>
+		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
+	</div></div>
 		<div id="header"><div class="container">
 			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
