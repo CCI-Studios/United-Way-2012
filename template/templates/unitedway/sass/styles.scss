@@ -16,6 +16,13 @@
 a.read-more {
 	color: $dark-grey;
 	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+
+	&:hover {
+		color: $red;
+		text-decoration: none;
+	}
 }
 
 .image-border {
