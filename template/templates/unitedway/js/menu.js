@@ -11,13 +11,13 @@ window.addEvent('domready', function() {
 		visible = !visible;
 	});
 	
-	wrapper.addEvent('click', function(event) {
-		if (visible) {
-			event = new Event(event);
-			event.preventDefault();
+	// wrapper.addEvent('click', function(event) {
+	// 	if (visible) {
+	// 		event = new Event(event);
+	// 		event.preventDefault();
 			
-			visible = false;
-			body.removeClass('menu-open');
-		}
-	});
+	// 		visible = false;
+	// 		body.removeClass('menu-open');
+	// 	}
+	// });
 });
