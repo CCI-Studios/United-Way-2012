@@ -86,3 +86,23 @@
 		color: #ffffff;
 	}
 }
+
+//search page
+
+#search-form {
+	padding: 20px 0 0;
+
+	fieldset {
+		margin: 0;
+	}
+}
+
+#search-results {
+	padding: 10px 0 0;
+
+	.result-text {
+		padding: 10px;
+		margin: 0 0 2em;
+		background-color: whitesmoke;
+	}
+}
