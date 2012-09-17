@@ -68,6 +68,15 @@
 	text-align: right;
 }
 
+.module.random-image {
+	@include image-border;
+
+	img {
+		display: block;
+	}
+}
+
+//thermometer
 .module.thermometer {
 	.custom {
 		text-align: center;
