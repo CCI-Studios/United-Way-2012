@@ -143,6 +143,30 @@
 	top: 1px;
 	height: 28px;
 	width: 40px;
+}
+
+//category mods
+
+.category-module {
+
+	li {
+
+		h4 {
+			padding: 0;
+			font-weight: normal;
+		}
+
+		a {
+			color: $text;
+
+			&:hover {
+				color: $red;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
 .mod-articles-category-date {
 	font-size: 12px;
 }
