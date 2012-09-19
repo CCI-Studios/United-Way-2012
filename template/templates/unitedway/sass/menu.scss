@@ -179,15 +179,44 @@
 	}
 	
 	&.mobile {
-		font-size: 20px;
+		font-size: 14px;
+		color: $dark-grey;
 		padding: 0;
 
 		li {
 			line-height: 38px;
 		}
 
-		a {
-			color: $text;
+		.menu > li {
+
+			> a,
+			> span {
+				color: #ffffff;
+				background-image: -moz-linear-gradient(top, #c80f05, #f72015);
+				background-image: -o-linear-gradient(top, #c80f05, #f72015);
+				background-image: -webkit-linear-gradient(top, #c80f05, #f72015);
+				background-image: linear-gradient(top, #c80f05, #f72015);
+				padding-left: 13px;
+				display: block;
+				border-bottom: 1px solid #de6f69;
+			}
+		}
+
+		ul ul {
+			margin: 0;
+			padding: 0;
+
+			a,
+			span {
+				color: $text;
+				padding-left: 35px;
+				display: block;
+				border-bottom: 1px solid #ededed;
+			}
+		}
+
+		&:first-child {
+			border-top: 1px solid #de6f69;
 		}
 	}
 }
