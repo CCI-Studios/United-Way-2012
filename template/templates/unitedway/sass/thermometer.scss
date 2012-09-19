@@ -36,7 +36,7 @@
 			background: url('../images/bullet_dash.png') left 8px no-repeat;
 			padding-left: 15px;
 			white-space: nowrap;
-			line-height: 1.3em;
+			line-height: 15px;
 			text-align: left;
 
 			&:first-child {
@@ -57,6 +57,7 @@
 		> div {
 			background: url('../images/bg_mercury.jpg') top center no-repeat;
 			position: absolute;
+			left: 0;
 			bottom: 0px;
 			width: 11px;
 			padding-top: 10px;
