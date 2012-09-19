@@ -4,6 +4,13 @@
 	}
 }
 
+.module.feed-twitter {
+
+	.ie8 &,
+	.ie7 & {
+		background: url('../images/icon_twitter-bird.png') left center no-repeat;
+	}
+}
 .module.sidebar {
 	margin-top: 0;
 	.home & {
