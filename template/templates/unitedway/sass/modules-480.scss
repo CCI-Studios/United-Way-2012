@@ -15,10 +15,14 @@
 	input {
 		height: 37px;
 		line-height: 1em;
-		padding: 11px 0 10px 10px;
 		border: 2px solid #efefef;
 		border-radius: 14px;
 		width: 180px;
+
+		.ie8 &,
+		.ie7 & {
+			padding: 11px 0 10px 10px;
+		}
 	}
 	
 	button {
