@@ -11,6 +11,14 @@
 		background: url('../images/icon_twitter-bird.png') left center no-repeat;
 	}
 }
+
+.module.logo {
+
+	.ie7 & {
+		margin-top: 15px;
+	}
+}
+
 .module.sidebar {
 	margin-top: 0;
 	.home & {
