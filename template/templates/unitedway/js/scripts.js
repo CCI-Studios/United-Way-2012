@@ -18,4 +18,5 @@ window.addEvent('domready', function() {
 window.addEvent('load', function () {
 	// columns
 	new CCI.Columns($('bottom'), '.module div.custom, ul.category-module');
+	new CCI.Columns($('sidebar'), '.module div.custom, ul.category-module');
 });
