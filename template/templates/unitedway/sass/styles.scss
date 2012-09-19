@@ -23,6 +23,11 @@ a.read-more {
 		color: $red;
 		text-decoration: none;
 	}
+		
+	.ie8 &,
+	.ie7 &	{
+		left: 10px;
+	}
 }
 
 .image-border {
@@ -46,35 +51,68 @@ a.read-more {
 //icons
 
 .icon-goals h3 {
-	background-image: url('../images/icon_goals.png');
+	background-image: url('../images/icon_goals-2x.png');
 	padding-left: 35px;
+
+	.ie8 &,
+	.ie7 & {
+		background-image: url('../images/icon_goals.png');
+	}
 }
 
 .icon-downloads h3 {
-	background-image: url('../images/icon_downloads.png');
+	background-image: url('../images/icon_downloads-2x.png');
 	padding-left: 35px;
+
+	.ie8 &,
+	.ie7 & {	
+		background-image: url('../images/icon_downloads.png');
+	}
 }
 
 .icon-news h3 {
-	background-image: url('../images/icon_news.png');
+	background-image: url('../images/icon_news-2x.png');
 	padding-left: 35px;
+
+	.ie8 &,
+	.ie7 & {	
+		background-image: url('../images/icon_news.png');
+	}
 }
 
 .icon-events h3 {
-	background-image: url('../images/icon_events.png');
+	background-image: url('../images/icon_events-2x.png');
 	padding-left: 35px;
+
+	.ie8 &,
+	.ie7 & {	
+		background-image: url('../images/icon_events.png');
+	}
 }
 
 .icon-twitter-bird {
-	background: url('../images/icon_twitter-bird.png') left center no-repeat;
+	background: url('../images/icon_twitter-bird-2x.png') left center no-repeat;
 	background-size: 41px;
 	padding-left: 53px;
+
+	.ie8 &,
+	.ie7 & {	
+		background-image: url('../images/icon_twitter-bird.png') left center no-repeat;
+	}
 }
 
 .icon-back-to-top {
-	background: url('../images/icon_back-to-top.png') left center no-repeat;
+	background: url('../images/icon_back-to-top-2x.png') left center no-repeat;
 	padding: .83em 0 .83em 35px;
 	background-size: 24px;
+
+	.ie8 &,
+	.ie7 & {	
+		background-image: url('../images/icon_back-to-top.png') left center no-repeat;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+	}
 }
 
 //colors
