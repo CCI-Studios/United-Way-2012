@@ -45,7 +45,19 @@
 			display: inline-block;
 			*display: inline;
 			*zoom: 1;
-			padding: 0 10px;
+			width: 28px;
+			height: 32px;
+			line-height: 32px;
+			background: whitesmoke;
+			border-radius: 2px;
+			border: 1px solid #CECECE;
+			margin: 0 4px 2px 0;
+			&.pagination-start,
+			&.pagination-prev,
+			&.pagination-next,
+			&.pagination-end {
+				width: 42px;
+			}
 		}
 	}
 }
