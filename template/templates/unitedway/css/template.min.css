@@ -592,7 +592,8 @@ label {
 
 .cfdiv_header label {
   display: block;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  width: auto; }
 .cfdiv_header.multiline_start {
   min-height: 30px; }
   .cfdiv_header.multiline_start p {
@@ -600,20 +601,19 @@ label {
 
 .cfdiv_checkboxgroup {
   margin-top: 10px; }
+  .cfdiv_checkboxgroup input[type="checkbox"] {
+    margin-top: 0; }
   .cfdiv_checkboxgroup label {
-    float: none !important;
-    display: block; }
+    margin-top: 0;
+    width: auto; }
 
-.cfdiv_checkboxgroup.label_over > label {
-  width: 100%; }
 .cfdiv_checkboxgroup.label_over input {
   float: left;
   clear: left;
-  margin: 7px 5px 0px; }
+  margin: 0 5px; }
 .cfdiv_checkboxgroup.label_over div label {
   font-weight: normal;
-  float: left;
-  margin-top: 6px; }
+  float: left; }
 
 /*
 Grids should be setup using the following structure:
@@ -807,7 +807,8 @@ div.container
   position: relative;
   z-index: 5;
   box-shadow: 0 0 30px #333;
-  min-height: 100%; }
+  min-height: 100%;
+  width: 100%; }
   body.menu-open #wrapper {
     position: fixed; }
 
@@ -859,7 +860,7 @@ div.container
   padding: 10px 0 0; }
   #search-results .result-text {
     padding: 0 10px;
-    margin: 1em 0 2em;
+    margin: 0 0 2em;
     background-color: whitesmoke; }
 
 .module h3 {
@@ -1329,7 +1330,15 @@ a.read-more {
       display: inline-block;
       *display: inline;
       *zoom: 1;
-      padding: 0 10px; }
+      width: 28px;
+      height: 32px;
+      line-height: 32px;
+      background: whitesmoke;
+      border-radius: 2px;
+      border: 1px solid #CECECE;
+      margin: 0 4px 2px 0; }
+      .pagination ul li.pagination-start, .pagination ul li.pagination-prev, .pagination ul li.pagination-next, .pagination ul li.pagination-end {
+        width: 42px; }
 
 .module.thermometer .mod_thermometer {
   margin-left: 30px; }
@@ -1409,10 +1418,11 @@ a.read-more {
     .module.search-bar input {
       height: 37px;
       line-height: 1em;
-      padding: 11px 0 10px 10px;
       border: 2px solid #efefef;
       border-radius: 14px;
       width: 180px; }
+      .ie8 .module.search-bar input, .ie7 .module.search-bar input {
+        padding: 11px 0 10px 10px; }
     .module.search-bar button {
       top: 5px;
       right: 10px;
@@ -1476,7 +1486,7 @@ a.read-more {
     float: left;
     clear: none; }
     .full .module.sidebar {
-      width: 33.333333333%%; }
+      width: 33.333333333%; }
 
   .module.social-links {
     width: 20%;
