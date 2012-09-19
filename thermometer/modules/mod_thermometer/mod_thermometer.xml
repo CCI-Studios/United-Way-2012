@@ -29,6 +29,10 @@
 					name="current1"
 					type="text"
 					label="Thermometer 1 Current" />
+				<field
+					name="prefix1"
+					type="text"
+					label="Thermometer 1 Prefix" />
 
 				<field
 					name="name2"
@@ -42,6 +46,10 @@
 					name="current2"
 					type="text"
 					label="Thermometer 2 Current" />
+				<field
+					name="prefix2"
+					type="text"
+					label="Thermometer 2 Prefix"  />
 			</fieldset>
 
 			<fieldset name="advanced">

@@ -6,13 +6,13 @@ JFactory::getDocument()->addStyleSheet('/modules/mod_thermometer/mod_thermometer
 <? for ($tm = 1; $tm <= 2; $tm ++): ?>
 	<div class="mod_thermometer">
 		<h2><?= $params->get("name$tm") ?></h2>
-		<p>Current $<?= number_format($params->get("current$tm"), 0, '.', ','); ?></p>
+		<p>Current <?= $params->get("prefix$tm") . number_format($params->get("current$tm"), 0, '.', ','); ?></p>
 		<div class="thermo">
 			<div class="asdf">
 				<ul>
-					<li>Goal: $<?= number_format($params->get("goal$tm"), 0, '.', ',') ?></li>
+					<li>Goal: <?= $params->get("prefix$tm") . number_format($params->get("goal$tm"), 0, '.', ',') ?></li>
 					<? for($i = 7; $i >= 1; $i--): ?>
-						<li>$<?= number_format($i * $params->get("goal$tm")/8.0, 0, '.', ',') ?></li>
+						<li><?= $params->get("prefix$tm") . number_format($i * $params->get("goal$tm")/8.0, 0, '.', ',') ?></li>
 					<? endfor; ?>
 					<li>0</li>
 				</ul>
