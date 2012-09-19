@@ -208,6 +208,7 @@ label {
 	label {
 		display: block;
 		margin-top: 1.5em;
+		width: auto;
 	}
 
 	&.multiline_start {
@@ -223,29 +224,28 @@ label {
 .cfdiv_checkboxgroup {
 	margin-top: 10px;
 
+	input[type="checkbox"] {
+		margin-top: 0;
+	}
+
 	label {
-		float: none !important;
-		display: block;
+		margin-top: 0;
+		width: auto;
 	}
 }
 
 .cfdiv_checkboxgroup.label_over {
 
-	> label {
-		width: 100%;
-	}
-
 	input {
 		float: left;
 		clear: left;
-		margin: 7px 5px 0px;
+		margin: 0 5px;
 	}
 
 	div {
 		label {
 			font-weight: normal;
 			float: left;
-			margin-top: 6px;
 		}
 	}
 }
