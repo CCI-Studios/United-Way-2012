@@ -48,11 +48,21 @@
 	
 	li {
 
+		> a,
+		> span {
+			color: $dark-grey;
+			&:hover {
+				color: black;
+				text-decoration: none;
+			}
+		}
+
 		&:first-child {
 			padding-left: 0;
 		}
 		&.active {
-			> a {
+			> a,
+			> span {
 				color: black;
 			}
 
