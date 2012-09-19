@@ -223,9 +223,9 @@ label {
 .cfdiv_checkboxgroup {
 	margin-top: 10px;
 
-	> label {
-		float: left;
-		min-width: 150px;
+	label {
+		float: none !important;
+		display: block;
 	}
 }
 
