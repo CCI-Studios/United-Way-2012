@@ -14,18 +14,20 @@
 
 
 .category-list {
+	clear: both;
 
 	tr {
 		margin-bottom: 1em;
 		display: block;
 
 		.list-title {
-			display: block;
+			
 		}
 
 		.list-date {
-			min-width: 120px;
-			margin-left: 10px;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
 		}
 	}
 }

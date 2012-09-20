@@ -1311,14 +1311,15 @@ a.read-more {
 .cat-items {
   margin-top: 1em; }
 
-.category-list tr {
-  margin-bottom: 1em;
-  display: block; }
-  .category-list tr .list-title {
+.category-list {
+  clear: both; }
+  .category-list tr {
+    margin-bottom: 1em;
     display: block; }
-  .category-list tr .list-date {
-    min-width: 120px;
-    margin-left: 10px; }
+    .category-list tr .list-date {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1; }
 
 .pagination {
   margin-top: 1em; }
