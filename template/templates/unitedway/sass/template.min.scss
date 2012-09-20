@@ -19,7 +19,7 @@
 @import "blog";
 @import "com_content";
 @import "thermometer";
-@import "slideshow";
+@imoort "gallery";
 
 // @import "grid-320";
 @import "layout-320";
@@ -29,20 +29,21 @@
 	@import "layout-480";
 	@import "modules-480";
     @import "styles-480";
+    @imoort "gallery-480";
 }
 @media only screen and (min-width:760px) {
 	// @import "grid-760";
 	@import "layout-760";
 	@import "modules-760";
     @import "styles-760";
-    @import "slideshow-760";
+    @import "gallery-760";
 }
 @media only screen and (min-width:960px) {
 	@import "layout-960";
 	@import "modules-960";
 	@import "menu-960";
     @import "styles-960";
-    @import "slideshow-960";
+    @import "gallery-960";
 }
 @media only screen and (min-width:1100px) {
     // @import "1100-up";
