@@ -71,19 +71,19 @@ $typekit = 'ubu2hmw';
 		<div id="mobile-menu"><div>
 			<jdoc:include type="modules" name="mobile-menu" style="rounded" />
 		</div></div>
-		
+
 		<div id="header"><div class="container">
 			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
 		</div></div>
-		
+
 		<div class="container">
 			<?php if ($this->countModules('masthead')): ?>
 			<div id="masthead">
 				<jdoc:include type="modules" name="masthead" style="rounded" />
 			</div>
 			<?php endif; ?>
-			
+
 			<?php if ($this->countModules('top')): ?>
 			<div id="top">
 				<jdoc:include type="modules" name="top" style="rounded" />
@@ -96,20 +96,20 @@ $typekit = 'ubu2hmw';
 			</div>
 
 			<div id="main">
-				<div id="content" class="<?php 
+				<div id="content" class="<?php
 							if (!$this->countModules('sidebar')) {
 								echo 'wide1';
 							} else {
 								echo 'wide2';
 							}
 					?>">
-					
+
 					<?php if ($this->countModules('precontent')): ?>
 					<div id="precontent">
 						<jdoc:include type="modules" name="precontent" style="rounded" />
 					</div>
 					<?php endif; ?>
-					
+
 					<jdoc:include type="message" />
 					<article>
 						<jdoc:include type="component" />
@@ -119,7 +119,7 @@ $typekit = 'ubu2hmw';
 						<jdoc:include type="modules" name="postcontent" style="rounded" />
 					<?php endif; ?>
 				</div>
-				
+
 				<?php if ($this->countModules('postbody')): ?>
 				<div id="postbody">
 					<jdoc:include type="modules" name="postbody" style="rounded" />
@@ -148,7 +148,7 @@ $typekit = 'ubu2hmw';
 			</div>
 			<jdoc:include type="modules" name="footer" style="rounded" />
 		</div></div>
-		
+
 		<div id="debug">
 			<jdoc:include type="modules" name="debug" />
 		</div>
@@ -167,6 +167,7 @@ $typekit = 'ubu2hmw';
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/flickr.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/scripts.js"></script>
 	<?php else: ?>
 		<?php if ($analytics): ?>

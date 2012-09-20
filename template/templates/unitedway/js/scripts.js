@@ -4,6 +4,7 @@
  * @codekit-prepend "lettering.js"
  * @codekit-prepend "html5.js"
  * @codekit-prepend "rollover.js"
+ * @codekit-prepent "flickr.js"
  */
 
 window.addEvent('domready', function() {
