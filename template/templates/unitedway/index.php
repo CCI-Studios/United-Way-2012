@@ -25,6 +25,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 }
 
 JHTML::_('behavior.mootools');
+JHTML::_('behavior.modal');
 $analytics = 'UA-34768512-1';
 $typekit = 'ubu2hmw';
 ?>
