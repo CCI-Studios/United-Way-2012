@@ -57,6 +57,10 @@
 			&.pagination-next,
 			&.pagination-end {
 				width: 42px;
+
+				a {
+					display: block;
+				}
 			}
 		}
 	}
