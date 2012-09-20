@@ -32,8 +32,16 @@ window.addEvent('load', function() {
 		                	var div = new Element('div', {
 		                		'class': 'photo'
 		                	});
-		                    this.inject(div);
+		                	var a = new Element('a', {
+		                		'href': this.src,
+		                		'class': 'modal',
+		                		'rel': "{handler: 'images'}"
+		                	});
+		                	this.inject(a);
+		                    a.inject(div);
 		                    div.inject(gallery);
+
+		                    SqueezeBox.assign(a);
 		                }
 		           });
 		        });
