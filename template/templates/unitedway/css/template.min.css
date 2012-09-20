@@ -1526,7 +1526,8 @@ a.read-more {
     display: none; }
 
   .flickr-gallery .photo {
-    width: 25%; } }
+    width: 25%;
+    height: 128px; } }
 @media only screen and (min-width: 960px) {
   .container {
     width: 960px;
@@ -1573,4 +1574,5 @@ a.read-more {
     display: none; }
 
   .flickr-gallery .photo {
-    width: 33.33%; } }
+    width: 33.33%;
+    height: 147px; } }

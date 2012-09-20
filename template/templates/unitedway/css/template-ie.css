@@ -1388,7 +1388,9 @@ a.read-more {
 
 .flickr-gallery .photo {
   width: 100%;
-  padding: 0 5px 10px; }
+  padding: 0 5px;
+  margin: 5px 0;
+  overflow-y: hidden; }
   .flickr-gallery .photo img {
     display: block; }
 
@@ -1471,7 +1473,8 @@ a.read-more {
 
 .flickr-gallery .photo {
   width: 50%;
-  float: left; }
+  float: left;
+  height: 163px; }
 
 #mobile-menu {
   display: none; }
@@ -1532,7 +1535,8 @@ body.menu-open #wrapper {
   display: none; }
 
 .flickr-gallery .photo {
-  width: 25%; }
+  width: 25%;
+  height: 128px; }
 
 .container {
   width: 960px;
@@ -1579,4 +1583,5 @@ body.menu-open #wrapper {
   display: none; }
 
 .flickr-gallery .photo {
-  width: 33.33%; }
+  width: 33.33%;
+  height: 147px; }

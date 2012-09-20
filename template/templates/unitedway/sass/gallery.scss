@@ -2,7 +2,9 @@
 
 	.photo {
 		width: 100%;
-		padding: 0 5px 10px;
+		padding: 0 5px;
+		margin: 5px 0;
+		overflow-y: hidden;
 
 		img {
 			display: block;
