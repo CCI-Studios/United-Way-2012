@@ -3,12 +3,16 @@
 @import "normalize";
 @import "forms";
 
+body {
+	color: #4e4e4e;
+}
+
 .DonorInformationTextboxLabel {
 	float: left;
-	text-align: left;
 	padding-right: 3px;
 	min-width: 150px;
 	font-weight: bold;
+	font-size: 14px;
 }
 
 .DonorInformationTextbox {
@@ -22,17 +26,21 @@ h2,
 	font-size: 18px;
 }
 
-// input[type="text"] {
-// 	padding: 4px;
-// 	border: 1px solid lightGrey;
-// 	width: 250px;
-// }
+input[type="text"] {
+	padding: 4px;
+	border: 1px solid lightGrey;
+	width: 250px;
+}
 
-// input[type="button"],
-// input[type="submit"] {
-// 	border: 0;
-// 	padding: 4px;
-// }
+input[type="radio"] {
+	margin: 0 5px;
+}
+
+input[type="button"],
+input[type="submit"] {
+	border: 0;
+	padding: 4px;
+}
 
 #DonationTypes {
 	width: 190px;
@@ -42,10 +50,10 @@ h2,
 	width: 100%;
 }
 
-// #ctl00_Body_cxNumPaySection {
-// 	padding: 0 !important;
-// }
+#ctl00_Body_cxNumPaySection {
+	padding: 0 !important;
+}
 
-// #Instructions {
-// 	font-size: 14px !important;
-// }
+#Instructions {
+	font-size: 14px !important;
+}
