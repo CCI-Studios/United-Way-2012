@@ -881,9 +881,11 @@ div.container
     border-radius: 7px;
     padding-left: 5px;
     height: 26px;
-    color: #b2b2b2; }
+    color: #b2b2b2;
+    font-style: italic; }
     .module.search-bar input:focus {
-      color: #4e4e4e; }
+      color: #4e4e4e;
+      font-style: normal; }
   .module.search-bar button {
     position: absolute;
     top: 0px;
@@ -1429,7 +1431,8 @@ a.read-more {
     line-height: 1em;
     border: 2px solid #efefef;
     border-radius: 14px;
-    width: 180px; }
+    width: 180px;
+    padding-left: 15px; }
     .ie8 .module.search-bar input, .ie7 .module.search-bar input {
       padding: 11px 0 10px 10px; }
   .module.search-bar button {

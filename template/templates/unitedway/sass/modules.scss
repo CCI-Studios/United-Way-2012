@@ -23,9 +23,11 @@
 		padding-left: 5px;
 		height: 26px;
 		color: $light-grey;
+		font-style: italic;
 
 		&:focus {
 			color: $text;
+			font-style: normal;
 		}
 	}
 	

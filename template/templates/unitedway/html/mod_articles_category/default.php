@@ -130,14 +130,13 @@ defined('_JEXEC') or die;
 	<?php endforeach; ?>
 <?php endif; ?>
 <?php if ($item->displayCategoryTitle) :?>
-
-	<span class="mod-articles-category-category"><?php 
-		$show_category = $params->get('show_category', 0);
-		if ($item->catid) {
-			$item->displayCategoryLink = JRoute::_(ContentHelperRoute::getCategoryRoute($item->catid));
-			$item->displayCategoryTitle = $show_category ? '<a class="read-more" href="'.$item->displayCategoryLink.'">More '.$item->category_title.'</a>' : '';
-		}
-		echo $item->displayCategoryTitle;
-	?></span>
 <?php endif; ?>
 </ul>
+<span class="mod-articles-category-category"><?php 
+	$show_category = $params->get('show_category', 0);
+	if ($item->catid) {
+		$item->displayCategoryLink = JRoute::_(ContentHelperRoute::getCategoryRoute($item->catid));
+		$item->displayCategoryTitle = $show_category ? '<a class="read-more" href="'.$item->displayCategoryLink.'">More '.$item->category_title.'</a>' : '';
+	}
+	echo $item->displayCategoryTitle;
+?></span>
