@@ -1484,11 +1484,12 @@ a.read-more {
 
   .module.fontResizer {
     float: right;
-    margin-top: 42px; }
+    margin: 40px 20px 0 0; }
     .module.fontResizer .bigger {
       font-size: 18px; }
     .module.fontResizer a {
-      color: #4e4e4e; }
+      color: #4e4e4e;
+      margin-left: 2px; }
       .module.fontResizer a:hover {
         color: #ee2e24;
         text-decoration: none; }

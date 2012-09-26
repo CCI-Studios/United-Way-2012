@@ -7,7 +7,7 @@
 
 .module.fontResizer {
 	float: right;
-	margin-top: 42px;
+	margin: 40px 20px 0 0;
 
 	.bigger {
 		font-size: 18px;
@@ -15,6 +15,7 @@
 
 	a {
 		color: $text;
+		margin-left: 2px;
 		&:hover {
 			color: $red;
 			text-decoration: none;
