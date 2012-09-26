@@ -5,6 +5,23 @@
 	}
 }
 
+.module.fontResizer {
+	float: right;
+	margin-top: 42px;
+
+	.bigger {
+		font-size: 18px;
+	}
+
+	a {
+		color: $text;
+		&:hover {
+			color: $red;
+			text-decoration: none;
+		}
+	}
+}
+
 .module.feed-twitter {
 	width: 80%;
 	text-align: left;

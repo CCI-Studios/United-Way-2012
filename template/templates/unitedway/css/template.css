@@ -1492,6 +1492,17 @@ a.read-more {
   .module.search-bar input {
     width: 300px; }
 
+  .module.fontResizer {
+    float: right;
+    margin-top: 42px; }
+    .module.fontResizer .bigger {
+      font-size: 18px; }
+    .module.fontResizer a {
+      color: #4e4e4e; }
+      .module.fontResizer a:hover {
+        color: #ee2e24;
+        text-decoration: none; }
+
   .module.feed-twitter {
     width: 80%;
     text-align: left;
