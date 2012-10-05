@@ -16,7 +16,7 @@
 	position: absolute;
 	top: 1px;
 	right: 10px;
-	
+
 	input {
 		border: 1px solid #efefef;
 		border-radius: 7px;
@@ -30,7 +30,7 @@
 			font-style: normal;
 		}
 	}
-	
+
 	button {
 		position: absolute;
 		top: 0px;
@@ -39,7 +39,7 @@
 		height:25px;
 		background: url('../images/icon_search.png') center center no-repeat;
 		background-size: 75%;
-		
+
 		border: none;
 		text-indent: -9999px;
 	}
@@ -52,7 +52,8 @@
 	background-size: 143px;
 	padding: 40px 0 0 0;
 	width: 100%;
-	
+	min-height: 2em;
+
 	#twitter_update_list {
 		margin: 0;
 		padding: 0;
@@ -72,7 +73,7 @@
 	text-align: right;
 
 	.ie8 & img {
-		width: 39px;	
+		width: 39px;
 	}
 }
 
@@ -105,11 +106,11 @@
 		background-size: 23px;
 		padding-bottom: 13px;
 	}
-	
+
 	ul {
 		list-style: none;
 		padding: 0;
-		
+
 		li {
 			padding-left: 10px;
 			background-repeat: no-repeat;
@@ -159,7 +160,7 @@
 	font-weight: 600;
 }
 
-//show-menu 
+//show-menu
 .module.show-menu {
 	position: absolute;
 	top: 1px;
