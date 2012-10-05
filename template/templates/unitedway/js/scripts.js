@@ -1,10 +1,13 @@
 /**
+ * @codekit-prepend "menu.js"
+ * @codekit-prepend "numbering.js"
  * @codekit-prepend "columns.js"
  * @codekit-prepend "dropmenu.js"
- * @codekit-prepend "lettering.js"
  * @codekit-prepend "html5.js"
+ * @codekit-prepend "fontSizer.js"
+ * @codekit-prepend "lettering.js"
  * @codekit-prepend "rollover.js"
- * @codekit-prepent "flickr.js"
+ * @codekit-prepend "flickr.js"
  */
 
 window.addEvent('domready', function() {
