@@ -211,12 +211,46 @@ label {
 		width: auto;
 	}
 
-	&.multiline_start {
+	&.multiline_start,
+	&.multiline_add {
 		min-height: 30px;
+
+		.venture-grant-application-form & {
+			width: 265px;
+		}
 
 		p {
 				margin: 0;
 		}
+	}
+
+	&#autoID-816a38c9854f6f8130c57e32ce098c03_container_div {
+		width: 150px;
+	}
+
+	// &#autoID-b1f1522554249fb06e5b407bc51068b5_container_div {
+	// 	width: 25%;
+	// }
+
+	.community-impact-program-outcome-report-form &.multiline_start {
+		width: 25%;
+
+		+ div {
+			width: 25%;
+			+ div {
+				width: 25%;
+				+ div {
+					width: 25%;
+				}
+			}
+		}
+	}
+}
+
+.cfdiv_text,
+.cfdiv_header {
+	&.multiline_add {
+		padding-left: 5px !important;
 	}
 }
 
@@ -239,13 +273,28 @@ label {
 	input {
 		float: left;
 		clear: left;
-		margin: 0 5px;
+		margin: 0 1% 0 0;
+		width: 4%;
+
+		.community-impact-program-outcome-report-form & + div {
+			float: none !important; 
+		}
 	}
 
 	div {
 		label {
 			font-weight: normal;
 			float: left;
+			margin: 0;
+			width: 95%;
 		}
 	}
 }
+
+//alert messages 
+.cf_alert {
+	ol {
+		margin-top: 1em;
+	}
+}
+

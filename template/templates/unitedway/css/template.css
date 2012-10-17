@@ -594,10 +594,26 @@ label {
   display: block;
   margin-top: 1.5em;
   width: auto; }
-.cfdiv_header.multiline_start {
+.cfdiv_header.multiline_start, .cfdiv_header.multiline_add {
   min-height: 30px; }
-  .cfdiv_header.multiline_start p {
+  .venture-grant-application-form .cfdiv_header.multiline_start, .venture-grant-application-form .cfdiv_header.multiline_add {
+    width: 265px; }
+  .cfdiv_header.multiline_start p, .cfdiv_header.multiline_add p {
     margin: 0; }
+.cfdiv_header#autoID-816a38c9854f6f8130c57e32ce098c03_container_div {
+  width: 150px; }
+.community-impact-program-outcome-report-form .cfdiv_header.multiline_start {
+  width: 25%; }
+  .community-impact-program-outcome-report-form .cfdiv_header.multiline_start + div {
+    width: 25%; }
+    .community-impact-program-outcome-report-form .cfdiv_header.multiline_start + div + div {
+      width: 25%; }
+      .community-impact-program-outcome-report-form .cfdiv_header.multiline_start + div + div + div {
+        width: 25%; }
+
+.cfdiv_text.multiline_add,
+.cfdiv_header.multiline_add {
+  padding-left: 5px !important; }
 
 .cfdiv_checkboxgroup {
   margin-top: 10px; }
@@ -610,10 +626,18 @@ label {
 .cfdiv_checkboxgroup.label_over input {
   float: left;
   clear: left;
-  margin: 0 5px; }
+  margin: 0 1% 0 0;
+  width: 4%; }
+  .community-impact-program-outcome-report-form .cfdiv_checkboxgroup.label_over input + div {
+    float: none !important; }
 .cfdiv_checkboxgroup.label_over div label {
   font-weight: normal;
-  float: left; }
+  float: left;
+  margin: 0;
+  width: 95%; }
+
+.cf_alert ol {
+  margin-top: 1em; }
 
 /*
 Grids should be setup using the following structure:
