@@ -1042,7 +1042,8 @@ div.container
     display: block; }
 .hmenu .menu > li > a,
 .hmenu .menu > li > span {
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline; }
 .hmenu ul ul {
   list-style: none;
   padding-left: 0;
