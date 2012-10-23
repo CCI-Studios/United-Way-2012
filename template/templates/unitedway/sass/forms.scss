@@ -109,7 +109,16 @@ label {
 }
 
 .style-3 {
-	overflow: auto;
+
+	.cfdiv_header label {
+		background-color: white !important;
+		padding: 0;
+		color: $text;
+	}
+
+	h2, h3 {
+		padding-top: 15px;
+	}
 
 	label {
 		height: 2em;
@@ -124,7 +133,6 @@ label {
 .style-4 {
 	text-align: center;
 	margin: 2em 0 1em;
-	overflow: auto;
 
 	.width-40 {
 		text-align: left;
@@ -140,7 +148,6 @@ label {
 
 .style-6 {
 	margin: 2em 0 1em;
-	overflow: auto;
 
 	input {
 		width: 95%;
@@ -149,8 +156,11 @@ label {
 
 //5 column table
 .style-7 {
-	overflow: auto;
 	margin: 2em 0 1em;
+
+	label {
+		height: 36px;
+	}
 
 	input {
 		width: 95%;
@@ -159,9 +169,12 @@ label {
 
 .style-8 {
 
-	overflow: auto;
+	h2 {
+		padding-top: 15px;
+	}
 
 	h3 {
+		padding-top: 15px;
 		text-align: center;
 	}
 
@@ -171,14 +184,24 @@ label {
 
 	.cfdiv_header.multiline_add {
 		text-align: center;
+		padding-top: 20px;
 	}
 }
 
 .style-9 {
-	overflow: auto;
+
+	h2, h3 {
+		padding-top: 15px;
+	}
 
 	input {
 		width: 95%;
+	}
+
+	.cfdiv_text.label_over {
+		label {
+			min-height: 40px;
+		}
 	}
 }
 
@@ -187,8 +210,12 @@ label {
 .ccms_form_element {
 	margin-bottom: 3px;
 
+	&.multiline_add {
+		padding-left: 5px !important;
+	}
+
 	p {
-		margin: .63em 0;
+		margin: 0;
 	}
 
 	textarea {
@@ -208,7 +235,10 @@ label {
 	label {
 		display: block;
 		margin-top: 1.5em;
-		width: auto;
+		width: 100%;
+		background-color: $red;
+		padding: 3px;
+		color: #ffffff;
 	}
 
 	&.multiline_start,
@@ -276,7 +306,8 @@ label {
 		margin: 0 1% 0 0;
 		width: 4%;
 
-		.community-impact-program-outcome-report-form & + div {
+		.community-impact-program-outcome-report-form & + div,
+		.full-budget-submission & + div {
 			float: none !important; 
 		}
 	}
@@ -298,3 +329,20 @@ label {
 	}
 }
 
+//header styles
+
+//red headers
+#autoID-90de373aa535fe66376a60a4b25cb3c9_container_div,
+#autoID-877b5a046898c1f255d18d14afee6774_container_div,
+#autoID-0665d4ebec616ccb06c1b19d96cee56d_container_div {
+	label {
+		width: 100% !important;
+		background-color: $red;
+		padding: 3px;
+		color: #ffffff;
+	}
+}
+
+#autoID-8d2010da69c74da018c34fa620dae30e_container_div {
+	padding-top: 20px;
+}

@@ -534,18 +534,21 @@ label {
   width: 50%;
   float: left; }
 
-.style-3 {
-  overflow: auto; }
-  .style-3 label {
-    height: 2em;
-    vertical-align: bottom; }
-  .style-3 input {
-    width: 95%; }
+.style-3 .cfdiv_header label {
+  background-color: white !important;
+  padding: 0;
+  color: #4e4e4e; }
+.style-3 h2, .style-3 h3 {
+  padding-top: 15px; }
+.style-3 label {
+  height: 2em;
+  vertical-align: bottom; }
+.style-3 input {
+  width: 95%; }
 
 .style-4 {
   text-align: center;
-  margin: 2em 0 1em;
-  overflow: auto; }
+  margin: 2em 0 1em; }
   .style-4 .width-40 {
     text-align: left; }
     .style-4 .width-40:first-child {
@@ -554,35 +557,41 @@ label {
     width: 95%; }
 
 .style-6 {
-  margin: 2em 0 1em;
-  overflow: auto; }
+  margin: 2em 0 1em; }
   .style-6 input {
     width: 95%; }
 
 .style-7 {
-  overflow: auto;
   margin: 2em 0 1em; }
+  .style-7 label {
+    height: 36px; }
   .style-7 input {
     width: 95%; }
 
-.style-8 {
-  overflow: auto; }
-  .style-8 h3 {
-    text-align: center; }
-  .style-8 input {
-    width: 95%; }
-  .style-8 .cfdiv_header.multiline_add {
-    text-align: center; }
+.style-8 h2 {
+  padding-top: 15px; }
+.style-8 h3 {
+  padding-top: 15px;
+  text-align: center; }
+.style-8 input {
+  width: 95%; }
+.style-8 .cfdiv_header.multiline_add {
+  text-align: center;
+  padding-top: 20px; }
 
-.style-9 {
-  overflow: auto; }
-  .style-9 input {
-    width: 95%; }
+.style-9 h2, .style-9 h3 {
+  padding-top: 15px; }
+.style-9 input {
+  width: 95%; }
+.style-9 .cfdiv_text.label_over label {
+  min-height: 40px; }
 
 .ccms_form_element {
   margin-bottom: 3px; }
+  .ccms_form_element.multiline_add {
+    padding-left: 5px !important; }
   .ccms_form_element p {
-    margin: .63em 0; }
+    margin: 0; }
   .ccms_form_element textarea {
     width: 100%; }
 
@@ -593,7 +602,10 @@ label {
 .cfdiv_header label {
   display: block;
   margin-top: 1.5em;
-  width: auto; }
+  width: 100%;
+  background-color: #ee2e24;
+  padding: 3px;
+  color: #ffffff; }
 .cfdiv_header.multiline_start, .cfdiv_header.multiline_add {
   min-height: 30px; }
   .venture-grant-application-form .cfdiv_header.multiline_start, .venture-grant-application-form .cfdiv_header.multiline_add {
@@ -628,7 +640,7 @@ label {
   clear: left;
   margin: 0 1% 0 0;
   width: 4%; }
-  .community-impact-program-outcome-report-form .cfdiv_checkboxgroup.label_over input + div {
+  .community-impact-program-outcome-report-form .cfdiv_checkboxgroup.label_over input + div, .full-budget-submission .cfdiv_checkboxgroup.label_over input + div {
     float: none !important; }
 .cfdiv_checkboxgroup.label_over div label {
   font-weight: normal;
@@ -638,6 +650,17 @@ label {
 
 .cf_alert ol {
   margin-top: 1em; }
+
+#autoID-90de373aa535fe66376a60a4b25cb3c9_container_div label,
+#autoID-877b5a046898c1f255d18d14afee6774_container_div label,
+#autoID-0665d4ebec616ccb06c1b19d96cee56d_container_div label {
+  width: 100% !important;
+  background-color: #ee2e24;
+  padding: 3px;
+  color: #ffffff; }
+
+#autoID-8d2010da69c74da018c34fa620dae30e_container_div {
+  padding-top: 20px; }
 
 /*
 Grids should be setup using the following structure:
