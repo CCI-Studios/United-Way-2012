@@ -45,35 +45,69 @@
 	}
 }
 
-//twitter feed
-.module.feed-twitter {
-	float: left;
-	background: url('../images/icon_twitter-bird-2x.png') top center no-repeat;
-	background-size: 143px;
-	padding: 40px 0 0 0;
+.module.social-link {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 50px;
+	padding: 5px 0;
 	width: 100%;
-	min-height: 2em;
 
-	#twitter_update_list {
+	.custom {
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	p {
 		margin: 0;
-		padding: 0;
+	}
 
-		li {
-			list-style: none;
+	a:hover {
+		text-decoration: none;
+	}
+
+	&.twitter {
+	
+		.custom {
+			background-image: url('../images/icon_twitter.jpg');
+		}
+
+		a {
+			color: $red;
+
+			&:hover {
+				color: lighten($red, 15%);
+			}
 		}
 	}
-}
 
-//social media links
-.module.social-links {
-	margin-top: 15px;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	text-align: right;
+	&.facebook {
 
-	.ie8 & img {
-		width: 39px;
+		.custom {
+			background-image: url('../images/icon_facebook.jpg');
+		}
+
+		a {
+			color: $blue;
+
+			&:hover {
+				color: darken(#cfd3e5, 25%);
+			}
+		}
+	}
+
+	&.flickr {
+
+		.custom {
+			background-image: url('../images/icon_flickr.jpg');
+		}
+
+		a {
+			color: $yellow;
+
+			&:hover {
+				color: lighten($yellow, 15%);
+			}
+		}
 	}
 }
 

@@ -23,14 +23,13 @@
 	}
 }
 
-.module.feed-twitter {
-	width: 80%;
-	text-align: left;
-	background-position: left center;
-	padding: 10px 0 10px 150px;
+.module.social-link {
+	float: left;
+	width: 33.33333%;
+	padding: 0;
 
-	#twitter_update_list {
-		padding-left: 40px;
+	&:first-child {
+		width: 33.33333%;
 	}
 }
 
@@ -41,12 +40,6 @@
 	.full & {
 		width: 33.333333333%;
 	}
-}
-
-.module.social-links {
-	width: 20%;
-	float: right;
-	margin-top: 0;
 }
 
 .module.bottom {

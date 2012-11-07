@@ -4,11 +4,13 @@
 	}
 }
 
-.module.feed-twitter {
+.module.social-link {
+	background: url('../images/bullet_grey.jpg') left center no-repeat;
+	width: 34.583333333%;
 
-	.ie8 &,
-	.ie7 & {
-		background: url('../images/icon_twitter-bird.png') left center no-repeat;
+	&:first-child {
+		width: 30.833333333%;
+		background: none;
 	}
 }
 
