@@ -944,27 +944,37 @@ div.container
     border: none;
     text-indent: -9999px; }
 
-.module.feed-twitter {
-  float: left;
-  background: url("../images/icon_twitter-bird-2x.png") top center no-repeat;
-  background-size: 143px;
-  padding: 40px 0 0 0;
-  width: 100%;
-  min-height: 2em; }
-  .module.feed-twitter #twitter_update_list {
-    margin: 0;
-    padding: 0; }
-    .module.feed-twitter #twitter_update_list li {
-      list-style: none; }
-
-.module.social-links {
-  margin-top: 15px;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  text-align: right; }
-  .ie8 .module.social-links img {
-    width: 39px; }
+.module.social-link {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  padding: 5px 0;
+  width: 100%; }
+  .module.social-link .custom {
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .module.social-link p {
+    margin: 0; }
+  .module.social-link a:hover {
+    text-decoration: none; }
+  .module.social-link.twitter .custom {
+    background-image: url("../images/icon_twitter.jpg"); }
+  .module.social-link.twitter a {
+    color: #ee2e24; }
+    .module.social-link.twitter a:hover {
+      color: #f4726b; }
+  .module.social-link.facebook .custom {
+    background-image: url("../images/icon_facebook.jpg"); }
+  .module.social-link.facebook a {
+    color: #10247b; }
+    .module.social-link.facebook a:hover {
+      color: #7c87b8; }
+  .module.social-link.flickr .custom {
+    background-image: url("../images/icon_flickr.jpg"); }
+  .module.social-link.flickr a {
+    color: #eea928; }
+    .module.social-link.flickr a:hover {
+      color: #f4c56f; }
 
 .module.random-image {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
@@ -1278,13 +1288,6 @@ a.read-more {
   .ie8 .icon-events h3, .ie7 .icon-events h3 {
     background-image: url("../images/icon_events.png"); }
 
-.icon-twitter-bird {
-  background: url("../images/icon_twitter-bird-2x.png") left center no-repeat;
-  background-size: 41px;
-  padding-left: 53px; }
-  .ie8 .icon-twitter-bird, .ie7 .icon-twitter-bird {
-    background-image: url("../images/icon_twitter-bird.png") left center no-repeat; }
-
 .icon-back-to-top {
   background: url("../images/icon_back-to-top-2x.png") left center no-repeat;
   padding: .83em 0 .83em 35px;
@@ -1498,13 +1501,6 @@ a.read-more {
       right: 10px;
       background-size: 100%; }
 
-  .module.feed-twitter .twitter-title {
-    float: left;
-    margin: 0 20px 10px 0; }
-  .module.feed-twitter .twitter-tweet {
-    max-width: 580px;
-    margin-left: 165px; }
-
   .module.sidebar,
   .module.bottom {
     background-size: 110px; }
@@ -1553,24 +1549,18 @@ a.read-more {
         color: #ee2e24;
         text-decoration: none; }
 
-  .module.feed-twitter {
-    width: 80%;
-    text-align: left;
-    background-position: left center;
-    padding: 10px 0 10px 150px; }
-    .module.feed-twitter #twitter_update_list {
-      padding-left: 40px; }
+  .module.social-link {
+    float: left;
+    width: 33.33333%;
+    padding: 0; }
+    .module.social-link:first-child {
+      width: 33.33333%; }
 
   .module.sidebar {
     float: left;
     clear: none; }
     .full .module.sidebar {
       width: 33.333333333%; }
-
-  .module.social-links {
-    width: 20%;
-    float: right;
-    margin-top: 0; }
 
   .module.bottom {
     width: 33.333333333%; }
@@ -1621,8 +1611,12 @@ a.read-more {
   .module.thermometer .custom {
     text-align: inherit; }
 
-  .ie8 .module.feed-twitter, .ie7 .module.feed-twitter {
-    background: url("../images/icon_twitter-bird.png") left center no-repeat; }
+  .module.social-link {
+    background: url("../images/bullet_grey.jpg") left center no-repeat;
+    width: 34.583333333%; }
+    .module.social-link:first-child {
+      width: 30.833333333%;
+      background: none; }
 
   .ie7 .module.logo {
     margin-top: 15px; }
