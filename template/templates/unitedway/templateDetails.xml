@@ -27,6 +27,7 @@
 		<position>debug</position>
 		<position>header</position>
 		<position>masthead</position>
+		<position>topper</position>
 		<position>top</position>
 		<position>precontent</position>
 		<position>postcontent</position>

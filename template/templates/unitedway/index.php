@@ -36,6 +36,7 @@ $typekit = 'ubu2hmw';
 
  	<jdoc:include type="head" />
 
+ 	<meta name="apple-itunes-app" content="app-id= 583310436"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
@@ -82,6 +83,13 @@ $typekit = 'ubu2hmw';
 			<?php if ($this->countModules('masthead')): ?>
 			<div id="masthead">
 				<jdoc:include type="modules" name="masthead" style="rounded" />
+			</div>
+			<?php endif; ?>
+
+			<?php if ($this->countModules('topper'): ?>
+			<div id="topper">
+				<jdoc:include type="modules" name="topper" style="rounded" />
+				<div class="clear"></div>
 			</div>
 			<?php endif; ?>
 
